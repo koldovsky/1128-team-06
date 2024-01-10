@@ -1,26 +1,43 @@
 <section>
+  <header>
+    <p>
+      <span class="block__names">Our Fave Finds</span>
+    </p>
+    <p>
+      <span class="block__description">The best designer products from the 2020 collections.</span>
+    </p>
+  </header>
+  <div>
+    <div class="navigation__tabs">
+      <div class="tab" onclick="openTab('armchairs')">Armchairs</div>
+      <div class="tab" onclick="openTab('lamps')">Lamps</div>
+      <div class="tab" onclick="openTab('tablets')">Tables</div>
+    </div>
+    <div class="tabs__content">
+      <div id="armchairs" class="tab-content">
+        <a href="#">
+          <img class="five__preview" src="img/five-finds/yellow-armchair.png" alt="yellow armchair">
+        </a>
+        <a href="#">
+          <img class="five__preview" src="img/five-finds/begue-armchair.png" alt="beige armchair">
+        </a>
+        <a href="#">
+          <img class="five__preview" src="img/five-finds/blue-armchair.png" alt="blue armchair">
+        </a>
+        <a href="#">
+          <img class="five__preview" src="img/five-finds/white-armchair.png" alt="white armchair">
+        </a>
+      </div>
 
-<h2>Our Fave Finds</h2>
-<h3>The best designer products from the 2020 collections. </h3>
-<div class="tab" onclick="openTab('armchairs')">Armchairs</div>
-<div class="tab" onclick="openTab('lamps')">Lamps</div>
-<div class="tab" onclick="openTab('tablets')">Tables</div>
+      <div id="lamps" class="tab-content">
+        <h3>Content for Tab 2</h3>
+        <p>This is the content for the second tab.</p>
+      </div>
 
-<!--Tab content-->
-
-<div id="armchairs" class="tab-content">
-    <h3>Content for Tab 1</h3>
-    <p>This is the content for the first tab.</p>
+      <div id="tables" class="tab-content">
+        <h3>Content for Tab 3</h3>
+        <p>This is the content for the third tab.</p>
+      </div>
+    </div>
   </div>
-
-  <div id="lamps" class="tab-content">
-    <h3>Content for Tab 2</h3>
-    <p>This is the content for the second tab.</p>
-  </div>
-
-  <div id="tables" class="tab-content">
-    <h3>Content for Tab 3</h3>
-    <p>This is the content for the third tab.</p>
-  </div>
-
 </section>
