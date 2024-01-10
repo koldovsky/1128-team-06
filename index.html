@@ -4,22 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>*Furniture store*</title>
+    <title>Furniture store</title>
     <link rel="shortcut icon" href="img/sofa-favicon.png" type="image/x-icon" />
   </head>
 
   <body>
     <!--Pavlo Radionov-->
-    <header data-include="header.partial.html"></header>
+    <header class="header">
+       <nav data-include="header-nav.partial.html"></nav>
+       <section data-include="index.header-hero.partial.html></section>
+    </header>  
+
+    
+    
     <main>
       <section data-include="index.home-section.partial.html"></section>
       <section data-include="index.carousel.partial.html"></section>
       <section data-include="index.fave-finds.partial.html" ></section>
+      <section data-include="index.brands.carousel.partial.html" ></section>
+      <section data-include="index.our-top-brands.partial.html" ></section>
       <section data-include="index.about-us.partial.html"></section>
       <section data-include="index.blog-content.partial.html"></section>
+      <section data-include="index.contact-us.partial.html"></section>
      
     </main>
-    <footer></footer>
+    <footer data-include="footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
   </body>
 </html>
