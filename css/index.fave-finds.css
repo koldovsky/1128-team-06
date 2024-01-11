@@ -1,10 +1,46 @@
+.inner__container{
+    width: 1200 px;
+    height: 652 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_fave,
+.container_content {
+  flex: 1;
+}
+
+.header_fave {
+    justify-content: left;
+    align-items: left;
+}
 .container_content {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .tab-content {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.five__preview {
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+}
+.price__fav {
+color: #7bb57c;
+margin: 8px;
+font-family: "Poppins",sans-serif;
+font-weight: bold;
+font-size: 14px;
+}
+.tab__fav{
+    font-family: "Poppins",sans-serif;
+    color: #a9a9a9;
+    font-size: 14px;
+
 }
