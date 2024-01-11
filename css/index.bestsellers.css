@@ -10,6 +10,9 @@
     size: 16px;
     color: rgb(51, 51, 51);
 }
+.bestsellers__item-grid{
+    width: 1020;
+}
 .bestsellers__item{
     width: 340px;
     height: 464px;
