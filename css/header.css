@@ -24,42 +24,42 @@
 
 .header-nav__link {
   text-decoration: none;
-  color: rgb(51,51,51);
+  color: var(--text-main-color);
   font-family: Poppins;
   font-size: 15px;
   font-weight: 500;
 }
 
 .header-nav__link:hover {
-  color: #7bb57c;
+  color: var(--accent-color);
 }
 
 .shop-link {
-  border: 3px solid #7bb57c;
+  border: 3px solid var(--accent-color);
   border-radius: 3px;
-  color: #757477;
+  color: var(--text-light-color);
   font-weight: 700;
   font-size: 11px;
   transition: all 200ms ease-in-out;
 }
 
 .shop-link:hover {
-  background-color: #7bb57c;
+  background-color: var(--accent-color);
   color:white;
 }
 
 .header-hero__title{
   font-family: Poppins;
-  color:rgb(51,51,51);
+  color:var(--text-main-color);
   font-size: 84px;
 }
 
 .title-highlighted {
-  color:#7bb57c;
+  color:var(--accent-color);
 }
 
 .header-hero__text {
-  color: rgb(51,51,51);
+  color: var(--text-main-color);
   font-family: Poppins;
   font-size: 18px;
 }
@@ -72,7 +72,7 @@
   width: 256px;
   height: 54px;
   text-decoration: none;
-  background-color: #7bb57c;
+  background-color: var(--accent-color);
   color: white;
   font-family: Poppins;
   font-weight: 600;
@@ -81,5 +81,5 @@
 }
 
 .header-hero__link:hover {
-  background-color: rgb(51,51,51);
+  background-color: var(--text-main-color);
 }
