@@ -1,0 +1,10 @@
+.container_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
