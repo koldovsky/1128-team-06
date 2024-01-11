@@ -1,3 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-.bestsellers__text{
-    font-family: 'Poppins', sans-serif;}
+
+.bestsellers__header-text{
+    font-family: 'Poppins', sans-serif;
+    size: 24px;
+    color: rgb(51, 51, 51);
+}
+.bestsellers__text {
+    font-family: 'Poppins', sans-serif;
+    size: 16px;
+    color: rgb(51, 51, 51);
+}
+.bestsellers__item{
+    width: 340px;
+    height: 464px;
+}
+.bestsellers__photo {
+width: 300px;
+}
+.bestsellers__photo-caption{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    size: 18px;
+    color: rgb(51, 51, 51);
+}
+.bestsellers__price{
+    color: #7bb57c;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    size: 20px;
+}
+.bestsellers__button{
+    color: #7bb57c;
+    width: 104px;
+    height: 34px;
+}
