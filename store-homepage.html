@@ -13,7 +13,24 @@
       <nav data-include="header-nav.partial.html"></nav>
     </header>
     <main>
-      <h2>Store homepage</h2>
+      <h2>Store homepage (<span id="products_amount">17</span>)</h2>
+      <section class="products">
+        <h3>Products (<span id="products_amount">17</span>)</h3>
+        <div class="products-container">
+          <div class="product">
+            <img src="img/products/minimal-3-piece.png" alt="3-piece Minimal lantern photo" style="height: 265px">
+            <p class="product__name">3-piece Minimal, ARM</p>
+            <p class="product__price">110,00USD</p>
+            <button class="buy-button">BUY</button>
+          </div>
+        </div>
+      </section>
+      <label for="products">Pruducts per page:</label>
+      <select name="products-per-page" id="products-per-page" class="products-per-page">
+        <option value="20" selected>20</option>
+        <option value="15">15</option>
+        <option value="100">100</option>
+      </select>
     </main>
     <footer data-include="footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
