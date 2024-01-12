@@ -7,7 +7,7 @@
 }
 
 .item__minor-photo-grid {
-    width: 584;
+    width: 580px;
 }
 
 .item__photo {
@@ -15,7 +15,10 @@
 }
 
 .item__minor-photo {
-    width: 135px;
+    display: grid;
+    grid-row: 1;
+    width: 130px;
+    gap: 20px;
 }
 
 .item__stock {
@@ -32,10 +35,22 @@
 .item__code {
     font-family: 'Poppins', sans-serif;
     size: 16px;
-    color: rgb(51, 51, 51)
+    color: var(--text-main-color);
 }
-.item__price{
+
+.item__price {
+    color: var(--accent-color);
     font-family: 'Poppins', sans-serif;
-    size: 16px;
-    color: #7bb57c
+    font-weight: 600;
+    size: 20px;
+}
+
+.item__button {
+    background-color: var(--accent-color);
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-size: 12px;
+    font-weight: 600;
 }
