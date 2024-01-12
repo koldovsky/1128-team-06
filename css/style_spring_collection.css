@@ -1,0 +1,124 @@
+.spring_colection_box{
+    width: 100%;
+    float: left;
+    height: 600px;
+    background-image: url(../img/background_main.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.spring_colection_box_title{
+    font-size: 70px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    width: 40%;
+    margin-left: 10%;
+}
+.spring_colection_box_title_green{
+    color: #7bb57c;
+}
+.spring_colection_box_text{
+    font-family: "Poppins", sans-serif;
+    width: 50%;
+    margin-left: 10%;
+}
+.spring_colection_box_button{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #7bb57c;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+.spring_colection_box_button:hover{
+    background-color: black;
+    transition: background-color 1s ease;
+}
+
+.decision{
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+.decision_block_white{
+    width: 500px;
+    height: 300px;
+    float: left;
+    background-image: url(../img/decision_img_white.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.decision_text_up_white{
+    font-family: "Poppins", sans-serif;
+   
+}
+.decision_title_white{
+    font-family: "Poppins", sans-serif;
+
+}
+.decision_text_down_white{
+    font-family: "Poppins", sans-serif;
+    color: grey;
+}
+.decision_block_white_button{
+    width: 130px;
+    height: 43px;
+    border-radius: 5px;
+    background-color: #7bb57c;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.decision_block_white_button:hover{
+    background-color: black;
+    transition: background-color 1s ease;
+}
+
+.decision_block_black{
+    width: 500px;
+    height: 300px;
+    float: left;
+    background-image: url(../img/decision_img_black.webp);
+    background-size: cover;
+}
+.decision_text_up_black{
+    font-family: "Poppins", sans-serif;
+    color: grey;
+   
+}
+.decision_title_black{
+    font-family: "Poppins", sans-serif;
+    color: white;
+
+}
+.decision_text_down_black{
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+.decision_block_black_button{
+    width: 130px;
+    height: 43px;
+    border-radius: 5px;
+    background-color: #7bb57c;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+.decision_block_black_button:hover{
+    background-color: white;
+    color: black;
+    transition: background-color 1s ease;
+}
