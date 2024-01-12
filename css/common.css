@@ -31,3 +31,8 @@ a {
 h2 {
   font-size: 38px;
 }
+
+/* для тексту виділеного зеленим кольором */
+.highlighted-text {
+  color: var(--accent-color);
+}
