@@ -13,6 +13,7 @@
   --text-light-color: #757477;
   --accent-color: #7bb57c;
   --background-color: #f7f5f6;
+  --section-color: #fff;
 }
 
 body {
@@ -21,4 +22,12 @@ body {
 
 img {
   display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 38px;
 }
