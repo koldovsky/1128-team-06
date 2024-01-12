@@ -1,7 +1,25 @@
-.carousel__quotes-item {
+.carousel-quotes__title {
+    text-align: center;
+}
+
+.carousel-quotes__subtitle {
+    text-align: center;
+}
+
+.carousel-quotes__items {
+    display: flex;
+}
+
+.carousel-quotes__item {
+    padding: 0px 15px;
+    margin: 15px;
     background-color: #FFFFFF;
 }
 
-.carousel__quotes-item-image {
+.carousel-quotes__item-image {
     border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
