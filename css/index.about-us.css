@@ -1,0 +1,5 @@
+.text-content-inside {
+    font-family: 'Poppins', sans-serif;
+    size: 24px;
+    color: var(--text-main-color);
+}
