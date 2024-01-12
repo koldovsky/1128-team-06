@@ -9,8 +9,8 @@
 :root {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  --text-main-color: rgb(51,51,51);
-  --text-light-color: #757477;
+  --text-main-color: #333333;
+  --text-light-color: #757171;
   --accent-color: #7bb57c;
   --background-color: #f7f5f6;
   --section-color: #fff;
