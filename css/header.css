@@ -55,8 +55,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px 24px 110px;
-  height: 689.63px;
+  padding: 0px 24px;
+  height: 100vh;
   overflow-wrap: break-word;
 }
 
@@ -98,19 +98,12 @@
   background-color: var(--text-main-color);
 }
 
-@media (min-width: 375px) {
-  .header-hero {
-    height: 655.2px;
-  }
-}
-
 @media (min-width: 768px) {
   .header-nav {
     padding: 30px 32px;
   }
 
   .header-hero {
-    height: 733.15px;
     padding-left: 32px;
     padding-right: 280px;
   }
@@ -143,8 +136,7 @@
   }
 
   .header-hero {
-    padding: 0px 40px;
-    height: 819.2px;
+    padding: 0px 380px 0px 40px;
   }
 
   .header-hero__title {
@@ -168,6 +160,5 @@
 
   .header-hero {
     padding: 0px;
-    height: 770px;
   }
 }
