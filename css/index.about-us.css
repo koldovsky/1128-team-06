@@ -1,4 +1,4 @@
-.about-us{
+.about{
     width: 524px;
     height: 455px;
     background-color: var(--background-color);
@@ -22,6 +22,10 @@
 .text-content-inside {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+}
+.about-us-photo{
+    width: 523px;
+    height: 425px;
 }
 
    
