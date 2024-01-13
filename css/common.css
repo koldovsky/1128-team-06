@@ -33,6 +33,11 @@ h2 {
   font-size: 38px;
 }
 
+.container {
+  max-width: 1175px;
+  margin: auto;
+}
+
 .highlighted-text {
   color: var(--accent-color);
 }
