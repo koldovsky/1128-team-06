@@ -1,14 +1,19 @@
 @import "common.css";
 @import "header.css";
-@import "footer.css";
-@import "index.products.css";
+@import "index.promotions.css";
+@import "index.top-collection.css";
 @import "index.bestsellers.css";
+@import "index.spring-collection.css";
 @import "index.fave-finds.css";
+@import "index.brands-carousel.css";
+@import "index.our-top-brands.css";
+@import "index.customer-quotes-carousel.css";
 @import "index.about-us.css";
 @import "index.blog-content.css";
-@import "index.item-page.css";
 @import "index.contact-us.css";
-@import "index.top-collection.css";
+@import "item-page.css";
 @import "store-homepage.css";
-@import "style-spring-collection.css";
-@import "index.customer-quotes-carousel.css";
+@import "footer.css";
+
+@import "index.products.css";
+
