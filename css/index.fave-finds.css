@@ -1,17 +1,16 @@
-.inner__container{
+.fave-finds__container{
     width: 1200 px;
     height: 652 px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.header_fave,
+.fave-finds__header,
 .container_content {
   flex: 1;
 }
 
-.header_fave {
+.fave-finds__header {
     justify-content: left;
     align-items: left;
 }
