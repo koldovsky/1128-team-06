@@ -1,0 +1,81 @@
+.carousel-quotes {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.carousel-quotes__title {
+    text-align: center;
+    color: #333333;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.carousel-quotes__subtitle {
+    text-align: center;
+    color: #333333;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.carousel-quotes__items {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-quotes__item {
+    padding: 0px 15px;
+    margin: 15px;
+    background-color: #FFFFFF;
+    align-self: flex-start;
+}
+
+.carousel-quotes__item-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.carousel-quotes__item-city {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #2c2c2c;
+    margin-top: 10px;
+}
+
+.carousel-quotes__item-text {
+    font-family: "Poppins", sans-serif;
+    margin-top: 25px;
+    font-size: 16px;
+    color: #707070;
+}
+
+.carousel-quotes__item-date {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #2c2c2c;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.carousel-quotes__item-image {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.carousel-quotes__item-prev-button, .carousel-quotes__item-next-button {
+    color: #717171;
+    border-width: 0;
+}
+
+.carousel-quotes__item-prev-button:hover, .carousel-quotes__item-next-button:hover {
+    color: #1d1a1a;
+    transition: 0,6s ease;
+}
+
+
+

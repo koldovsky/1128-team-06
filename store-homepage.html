@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Store homepage</title>
-</head>
-<body>
-  <header>
-    <nav data-include="header-nav.partial.html"></nav>
-  </header>
-  <main>
-    <h2>Store homepage</h2>
-  </main>
-  <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store homepage</title>
+    <link rel="shortcut icon" href="img/sofa-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav data-include="header-nav.partial.html"></nav>
+    </header>
+    <main>
+      <div class="store-homepage-container">
+        <h2 class="store-homepage__title">
+          Store homepage (<span id="store-items-amount">17</span>)
+        </h2>
+        <section class="products">
+          <h3 class="store-homepage__title">
+            Products (<span id="products-amount">17</span>)
+          </h3>
+          <div class="products-container">
+            <div class="products-container__product">
+              <a href="#" class="product__item">
+                <img
+                  src="img/products/minimal-3-piece.png"
+                  alt="3-piece Minimal lantern photo"
+                  style="height: 265px"
+                />
+                <p class="item__name">3-piece Minimal, ARM</p>
+              </a>
+              <p class="product__price">110,00USD</p>
+              <button class="buy-button">BUY</button>
+            </div>
+          </div>
+        </section>
+        <div class="page-settings">
+          <label for="products-per-page" class="page-settings__label"
+            >Pruducts per page:</label
+          >
+          <select
+            name="products-per-page"
+            id="products-per-page"
+            class="products-per-page"
+          >
+            <option value="20" selected>20</option>
+            <option value="15">15</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+      </div>
+    </main>
+    <footer data-include="footer.partial.html"></footer>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+  </body>
 </html>

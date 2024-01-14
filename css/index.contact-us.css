@@ -1,0 +1,56 @@
+.contact-us-section {
+    background-color: var(--section-color);
+}
+
+.contact-us-form__feedback-form {
+    font-size: 12px;
+    background-color: var(--background-color);
+}
+
+
+
+.feedback-form__item {
+    color: var(--text-light-color);
+    display: block;
+    border: 0;
+    margin: 12px 0px 0px;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.feedback-form__button {
+    background-color: var(--accent-color);
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    margin: 12px 0px 0px;
+    padding: 20px 30px;
+    font-size: 12px;
+}
+
+.contact-info__title {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.contact-info__text {
+    font-size: 18px;
+}
+
+.contact-info__address {
+    font-size: 16px;
+    color: var(--text-light-color);
+
+}
+
+.contact-info__working-hours span {
+    font-size: 16px;
+    color: var(--text-light-color);
+    display: block;
+}
+
+.contact-info__tel-mail a {
+    font-size: 16px;
+    color: var(--text-main-color);
+    display: block;
+}

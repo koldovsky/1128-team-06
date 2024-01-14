@@ -1,0 +1,8 @@
+.our-blog__header-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+}
+.our-blog-images {
+    color: var(--accent-color)
+}
