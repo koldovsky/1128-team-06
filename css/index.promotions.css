@@ -1,4 +1,13 @@
-promotial.title.dot
+.promotial__title-dot
 {
-    color:chartreuse
+    color:#7bb57c
+    
 }
+
+
+.promotial__title-dot
+{
+    font-weight:bold;
+    
+}
+
