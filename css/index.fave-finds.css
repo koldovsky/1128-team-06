@@ -1,44 +1,58 @@
-.fave-finds__container{
-    width: 1200 px;
-    height: 652 px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fave-finds {
+  width: 1200 px;
+  height: 652 px;
+  display: flex;
+  justify-content: center;
 }
-.fave-finds__header,
-.container_content {
-  flex: 1;
+
+.fave-finds__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
 }
 
 .fave-finds__header {
-    justify-content: left;
-    align-items: left;
+  width: 1200 px;
+  justify-content: left;
+  text-align: left;
 }
-.container_content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 .tab-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
 }
+
+.navigation__tabs {
+  display: flex;
+}
+
 .five__preview {
   width: 250px;
   height: 250px;
   padding: 15px;
 }
+
 .price__fav {
-  color: #7bb57c;
+  color: var(--accent-color);
   margin: 8px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 14px;
 }
+
 .tab__fav {
   font-family: "Poppins", sans-serif;
   color: #a9a9a9;
   font-size: 14px;
+  margin: 15px;
+}
+
+.block__description {
+  font-family: 'Poppins', sans-serif;
+  size: 16px;
+  color: var(--text-main-color);
+  text-align: center;
 }
