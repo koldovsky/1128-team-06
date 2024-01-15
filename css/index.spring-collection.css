@@ -1,7 +1,8 @@
 .spring-collection-box{
     width: 100%;
     float: left;
-    height: 600px;
+    margin-top: 50px;
+    min-height: 600px;
     background-image: url(../img/background_main.webp);
     background-size: cover; 
     background-position: center; 
