@@ -13,16 +13,14 @@
 
 .spring-collection-box__title{
     font-size: 70px;
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
     width: 40%;
     margin-left: 10%;
 }
 .spring-collection-box__title-green{
-    color: #7bb57c;
+    color: var(--accent-color);
 }
 .spring-collection-box__text{
-    font-family: "Poppins", sans-serif;
     width: 50%;
     margin-left: 10%;
 }
@@ -30,9 +28,8 @@
     width: 150px;
     height: 50px;
     border-radius: 5px;
-    background-color: #7bb57c;
+    background-color: var(--accent-color);
     color: aliceblue;
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
     margin-left: 10%;
 }
@@ -62,24 +59,20 @@
 }
 
 .decision__text-up-white{
-    font-family: "Poppins", sans-serif;
    
 }
 .decision__title-white{
-    font-family: "Poppins", sans-serif;
 
 }
 .decision__text-down-white{
-    font-family: "Poppins", sans-serif;
     color: grey;
 }
 .decision__block-white-button{
     width: 130px;
     height: 43px;
     border-radius: 5px;
-    background-color: #7bb57c;
+    background-color: var(--accent-color);
     color: aliceblue;
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
 
@@ -96,26 +89,22 @@
     background-size: cover;
 }
 .decision__text-up-black{
-    font-family: "Poppins", sans-serif;
     color: grey;
    
 }
 .decision__title-black{
-    font-family: "Poppins", sans-serif;
     color: white;
 
 }
 .decision__text-down-black{
-    font-family: "Poppins", sans-serif;
     color: white;
 }
 .decision__block-black-button{
     width: 130px;
     height: 43px;
     border-radius: 5px;
-    background-color: #7bb57c;
+    background-color: var(--accent-color);
     color: aliceblue;
-    font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
 .decision__block-black-button:hover{
