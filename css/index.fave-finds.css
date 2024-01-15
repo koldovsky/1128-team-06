@@ -1,6 +1,6 @@
 .fave-finds {
-  width: 1200 px;
-  height: 652 px;
+  width: 1200px;
+  height: 652px;
   display: flex;
   justify-content: center;
 }
@@ -13,7 +13,7 @@
 }
 
 .fave-finds__header {
-  width: 1200 px;
+  width: 1200px;
   justify-content: left;
   text-align: left;
 }
@@ -52,7 +52,7 @@
 
 .block__description {
   font-family: 'Poppins', sans-serif;
-  size: 16px;
+  /*size: 16px;*/
   color: var(--text-main-color);
   text-align: center;
 }

@@ -1,15 +1,16 @@
-.contact-us-section {
+.contact-us {
     background-color: var(--section-color);
 }
 
-.contact-us-form__feedback-form {
+.contact-us__form-container {
     font-size: 12px;
     background-color: var(--background-color);
 }
 
 
 
-.feedback-form__item {
+.contact-us__form-input,
+.contact-us__form-textarea {
     color: var(--text-light-color);
     display: block;
     border: 0;
@@ -18,7 +19,7 @@
     border-radius: 5px;
 }
 
-.feedback-form__button {
+.contact-us__form-button {
     background-color: var(--accent-color);
     border: 0;
     color: #fff;

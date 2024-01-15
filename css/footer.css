@@ -11,12 +11,12 @@
     font-size: 14px;
 }
 
-.footer-nav__link {
+.footer__nav-link {
     color: var(--section-color);
     display: block;
 }
 
-.footer-social__links svg {
+.footer__social-links svg {
     fill: var(--section-color);
 }
 
@@ -34,7 +34,7 @@
     font-size: 12px;
 }
 
-.newsletter-form_btn {
+.newsletter-form__button {
     border: 0;
     margin: 12px 0px 0px;
     padding: 20px 30px;
