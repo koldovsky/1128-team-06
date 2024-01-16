@@ -1,6 +1,7 @@
 .promotial__title-dot {
 color:var(--accent-color);
 font-weight:bold;
+font-size: 22px;
 }
 
 .promotions__img-container{
@@ -14,6 +15,7 @@ width:100%;
 
 .promotions__item-text{
     font-family: "Poppins", sans-serif;
+    font-size: 22px;
     color:var(--text-main-color);
     text-align:left
 }
@@ -24,8 +26,14 @@ width:100%;
 }
 
 .promotions__item-learn{
-    text-align:left 
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    text-align:left;
+    text-decoration:underline;
+    
 }
+
+
 
 
 
