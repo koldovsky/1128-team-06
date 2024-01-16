@@ -1,11 +1,19 @@
-.style
-{
- color:#7bb57c   
+  
+.style{
+color:var(--accent-color);
+font-weight:bold;
+text-align:centre;
 }
 
-.top-collection__title
-{
+.top-collection__title{
+    font-family: "Poppins", sans-serif;
+    color:var(--text-accent-color,--text-main-color);
+    text-align:centre;
     font-weight:bold;
-
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
