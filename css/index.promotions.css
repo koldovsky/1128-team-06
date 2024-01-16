@@ -1,41 +1,33 @@
-.promotial__title-dot {
-color:var(--accent-color);
-font-weight:bold;
-font-size: 22px;
+.promotions__img-container {
+    width: 300px;
 }
 
-.promotions__img-container{
-    width:300px;
+.promotions__item-img {
+    display: block;
+    width: 100%;
 }
 
-.promotions__item-img { 
-display: block;
-width:100%;
-}
-
-.promotions__item-text{
+.promotions__item-text {
     font-family: "Poppins", sans-serif;
     font-size: 22px;
-    color:var(--text-main-color);
-    text-align:left
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    color: var(--text-main-color);
+    text-align: left
 }
 
-.promotions__item-learn{
+.promotial__title-dot {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.promotions__item-learn {
     font-family: "Poppins", sans-serif;
     font-size: 12px;
-    text-align:left;
-    text-decoration:underline;
-    
-}
+    text-align: left;
+    text-decoration: underline;
 
-
-
-
-
-   
-
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
