@@ -1,12 +1,27 @@
-.promotial__title-dot
-{
-    color:#7bb57c
-    
+.promotial__title-dot {
+color:var(--accent-color);
+font-weight:bold;
 }
 
-.promotial__title-dot
-{
-    font-weight:bold;
-    
+promotions__img-container{
+    width:300px;
 }
+
+.promotions__item-img { 
+display: block;
+width:100%;
+}
+
+.promotions__item-text{
+    font-family: "Poppins", sans-serif;
+    color:var(--text-main-color);
+    text-align:left
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+   
 
