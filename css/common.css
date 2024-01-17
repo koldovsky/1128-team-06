@@ -41,4 +41,5 @@ h2 {
 
 .highlighted-text {
   color: var(--accent-color);
+  font-weight: 700;
 }
