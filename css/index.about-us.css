@@ -1,4 +1,6 @@
-.about{
+.about__us{
+    flex-direction: row;
+    align-items: center;
     padding-top: 100px;
     padding-bottom: 50px;
     background-color: var(--section-color);
@@ -8,45 +10,36 @@
     padding-right: 40px;
     display: flex;
 }
-.about__section-text{
-    width: 525px;
-    height: 425px;
-    background-color: var(--background-color);   
+.about__section-text {
+    background-color: var(--background-color);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .about__header-text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: normal;
     color: var(--text-light-color);
-}
+} 
 .about__text {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    max-width: 397px;
-    max-height: 112px;
     text-align: center;
+    display: flex;
 }
 .text-content {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-
 }
 .text-content-inside {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
-.about-us-photo{
-    max-width: 523px;
-    max-height: 425px;
-    margin-left: auto;
-    margin-right: 50px;
-    position: relative;
+.about-us-photo-container {
+    
 }
-
-@media (min-width: 768px) {
-    .about__header {
-    text-align: left;   
-    flex-direction: column; 
-}
+.about-us-photo {
+  position:static;
+  right: 50px;
 }
