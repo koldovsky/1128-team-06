@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 .bestsellers__header-text {
-    font-family: 'Poppins', sans-serif;
-    size: 24px;
     color: var(--text-main-color);
     text-align: center;
+    font-weight: 500;
 }
 
 .bestsellers__text {
-    font-family: 'Poppins', sans-serif;
     size: 16px;
     color: var(--text-main-color);
     text-align: center;
