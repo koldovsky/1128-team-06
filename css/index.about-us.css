@@ -36,10 +36,13 @@
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
-.about-us-photo-container {
-    
-}
 .about-us-photo {
   position:static;
   right: 50px;
+}
+@media (min-width: 768px) {
+    .about__section-text {
+        text-align: left;
+        flex-direction: column;
+    }
 }
