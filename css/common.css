@@ -11,7 +11,9 @@
   --text-light-color: #757171;
   --accent-color: #7bb57c;
   --background-color: #f7f5f6;
+  --background-color-second: #fff;
   --section-color: #fff;
+  --text-block-color: grey;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
@@ -40,4 +42,5 @@ h2 {
 
 .highlighted-text {
   color: var(--accent-color);
+  font-weight: 700;
 }

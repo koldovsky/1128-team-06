@@ -1,84 +1,28 @@
-<section>
-  <div
-    class="header-cart"
-    style="background-color: rgb(247, 248, 250); color: #333333"
-  >
-    Shopping cart
-    <button class="close-button" aria-label="Close alert" type="button">
-      <span aria-hidden="true">&times; </span>
-    </button>
+<section class="modal-container">
+  <div class="header-cart">Shopping cart
+  <div class="close-button"> <button  type="button"> <span aria-hidden="true">&times; </span>
+  </button></div>
+  </div> 
+<div class="customer-details">Place an order</div>
+<form class="form__input">
+  <div class="name"> 
+      <div>Name *</div> 
+  <input class="name-input" placeholder="Your name" required="">
+   </div>
+   <div class="email"> 
+      <div>Email *</div> 
+  <input class="email-input" placeholder="Your email adress" required="">
+   </div>
+   <div class="phone"> 
+      <div>Phone *</div> 
+  <input class="phone-input" placeholder="Your phone number" required="">
   </div>
-  <div class="customer-details">Place an order</div>
-
-  <form>
-    <div>
-      <span data-sub-item="name">Name</span>
-      <span data-sub-item="required" style="opacity: 1" class="required-stargi"
-        >*</span
-      >
-    </div>
-    <input
-      type="name"
-      data-sub-item="input-field"
-      style="
-        border-color: #757171;
-        background-color: rgba(51, 51, 51, 0.12);
-        --w-get-input-background-color: rgba(51, 51, 51, 0.12);
-      "
-      placeholder="Your name"
-      required=""
-    />
-    <div>
-      <span data-sub-item="name">Email</span>
-      <span data-sub-item="required" style="opacity: 1" class="required-star"
-        >*</span
-      >
-    </div>
-    <input
-      type="name"
-      data-sub-item="input-field"
-      style="
-        border-color: #757171;
-        background-color: rgba(51, 51, 51, 0.12);
-        --w-get-input-background-color: rgba(51, 51, 51, 0.12);
-      "
-      placeholder="Your email adress"
-      required=""
-    />
-    <div>
-      <span data-sub-item="name">Phone</span>
-      <span data-sub-item="required" style="opacity: 1" class="required-star"
-        >*</span
-      >
-    </div>
-    <input
-      type="name"
-      data-sub-item="input-field"
-      style="
-        border-color: #757171;
-        background-color: rgba(51, 51, 51, 0.12);
-        --w-get-input-background-color: rgba(51, 51, 51, 0.12);
-      "
-      placeholder="Your phone"
-      required=""
-    />
-    <div>
-      <span data-sub-item="name">Comment</span>
-    </div>
-    <input
-      type="name"
-      data-sub-item="input-field"
-      style="
-        border-color: #757171;
-        background-color: rgba(51, 51, 51, 0.12);
-        --w-get-input-background-color: rgba(51, 51, 51, 0.12);
-      "
-      placeholder="Your comment"
-    />
-  </form>
-  <div class="order-button">
-    <button style="background-color: rgb(14, 173, 14); color: azure">
-      ORDER
-    </button>
-  </div>
+  <div class="comment"> 
+      <div>Comment</div> 
+  <input class="comment-input" placeholder="Your comment">
+   </div>
+</form>
+<div class="order-button">
+<button>ORDER</button>
+</div>
 </section>

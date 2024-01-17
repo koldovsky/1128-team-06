@@ -1,12 +1,17 @@
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+
      .style {
          font-family: "Poppins", sans-serif;
          font-size: 50px;
          font-weight: 700;
          color: var(--accent-color);
-         text-align: center;
+         text-align: start;
          font-weight: bold;
          width: 369px;
-
      }
 
      .top-collection__title {
@@ -14,15 +19,7 @@
          font-size: 50px;
          font-weight: 700;
          color: var(--text-main-color);
-         text-align: center;
+         text-align: start;
          font-weight: bold;
          width: 369px;
-
-     }
-
-     .top-collection {
-         margin-top: 20px;
-         margin-bottom: 60px;
-         margin-left: 5px;
-         margin-right: 5px;
      }

@@ -29,13 +29,13 @@
     height: 50px;
     border-radius: 5px;
     background-color: var(--accent-color);
-    color: aliceblue;
+    color: var(--section-color);
     font-weight: bold;
     margin-left: 10%;
 }
 
 .spring-collection-box__button:hover{
-    background-color: black;
+    background-color: var(--text-main-color);
     transition: background-color 1s ease;
 }
 
@@ -49,8 +49,8 @@
     margin-top: 70px;
 }
 .decision__block-white{
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     float: left;
     background-image: url(../img/decision_img_white.webp);
     background-size: cover; 
@@ -59,56 +59,62 @@
 }
 
 .decision__text-up-white{
-   
+    margin-top: 8%;
 }
 .decision__title-white{
-
+    font-weight: 300;
+    margin-top: 5%;
 }
 .decision__text-down-white{
-    color: grey;
+    color: var(--text-block-color);
+    margin-top: 5%;
 }
 .decision__block-white-button{
     width: 130px;
     height: 43px;
     border-radius: 5px;
     background-color: var(--accent-color);
-    color: aliceblue;
+    color:  var(--section-color);
     font-weight: bold;
+    margin-top: 5%;
 }
 
 .decision__block-white-button:hover{
-    background-color: black;
+    background-color: var(--text-main-color);
     transition: background-color 1s ease;
 }
 
 .decision__block-black{
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     float: left;
     background-image: url(../img/decision_img_black.webp);
     background-size: cover;
 }
 .decision__text-up-black{
-    color: grey;
-   
+    color: var(--text-block-color);
+    margin-top: 8%
 }
 .decision__title-black{
-    color: white;
-
+    font-weight: 300;
+    color: var(--section-color);
+    margin-top: 5%
 }
 .decision__text-down-black{
-    color: white;
+    color: var(--section-color);
+    margin-top: 5%
 }
 .decision__block-black-button{
     width: 130px;
     height: 43px;
     border-radius: 5px;
     background-color: var(--accent-color);
-    color: aliceblue;
+    color: var(--section-color);
     font-weight: bold;
+    margin-top: 5%
 }
 .decision__block-black-button:hover{
-    background-color: white;
-    color: black;
+    background-color: var(--section-color);
+    color: var(--text-main-color);
     transition: background-color 1s ease;
 }
