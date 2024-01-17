@@ -17,9 +17,7 @@
 }
 
 .header-nav__nav {
-  display: flex;
-  position: absolute;
-  visibility: hidden;
+  display: none;
 }
 
 .header-nav__link {
