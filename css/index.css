@@ -1,4 +1,5 @@
 @import "common.css";
+@import "controls.css";
 @import "header.css";
 @import "index.promotions.css";
 @import "index.top-collection.css";
@@ -13,8 +14,3 @@
 @import "index.contact-us.css";
 @import "item-page.css";
 @import "footer.css";
-
-
-@import "index.products.css";
-
-@import "store-homepage.css";
