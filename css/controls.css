@@ -21,7 +21,8 @@
   color: var(--text-tertiary-сolor);
 }
 
-.button-secondary {
+.button-secondary,
+.button-tertiary {
   background: var(--accent-color);
   color: var(--text-tertiary-сolor);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -29,4 +30,9 @@
 
 .button-secondary:hover {
   background: var(--text-main-color);
+}
+
+.button-tertiary:hover {
+  background: var(--background-color-second);
+  color: var(--text-main-color);
 }
