@@ -1,20 +1,14 @@
-.promotions {
-  margin-bottom: 90px;
-}
 
-.promotions__img-container {
-  margin-top: 40px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+/*.promotions__img-container{
+    width: 100%;
+  }
 
 .promotions__item-img {
-  width: 100%;
-  height: 100%;
-  height: 238.781px;
-  font-weight: 400px;
-  background-position: center;
+     width: 100%;
+    height: 100%;
+    height:238.781px;
+    font-weight:400px;
+    background-position: center;
 }
 
 .promotions__item-text {
@@ -33,8 +27,9 @@
 }
 
 .promotions__item-learn {
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  text-align: left;
-  text-decoration: underline;
-}
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: underline;
+}*/
+
