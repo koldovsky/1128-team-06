@@ -1,3 +1,8 @@
+@import "common.css";
+@import "controls.css";
+@import "header.css";
+@import "footer.css";
+
 .item-page .item__link {
     font-family: 'Poppins', sans-serif;
     size: 16px;
