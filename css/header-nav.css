@@ -1,4 +1,4 @@
-.header {
+.header-wrapper {
   background: url("../img/header-background.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@
   color: var(--accent-color);
 }
 
-.header-nav__link.button .button-primary {
+.header-nav__menu.button .button-primary {
   font-size: 11px;
   width: 103.66px;
   height: 42.8px;
