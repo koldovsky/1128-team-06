@@ -19,6 +19,15 @@ console.log(goals);
 //Мучкін Олександр
 
 //Радіонов Павло
+// 1 визначаю функцію goals, яка отримує кількість голів у трьох різних лігах
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // 2 повертаю суму голів усіх трьох ліг
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
+//  Використання:
+var messiManyGoals = goals(5, 10, 2);
+// Вивід:
+console.log(messiManyGoals);  // вивід: 17
 
 //Волохов Антон
 
