@@ -1,13 +1,15 @@
 .button {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  border: none;
   border-radius: 5px;
-  width: 111px;
-  height: 43px;
-  text-decoration: none;
-  font-weight: 700;
+  cursor: pointer;
+  display: flex;
   font-size: 10.8px;
+  font-weight: 700;
+  justify-content: center;
+  height: 43px;
+  width: 111px;
+  text-decoration: none;
   transition: all 200ms ease-in;
 }
 

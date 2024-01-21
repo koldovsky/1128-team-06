@@ -15,6 +15,7 @@
   --background-color-second: #fff;
   --section-color: #fff;
   --text-block-color: grey;
+  --input-light-color: #c5cbd6;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
