@@ -1,7 +1,9 @@
 //Тимчук Юрій
 
 //Ткач Євген
-
+function move (position, roll) {
+  return position + roll * 2;
+}
 //Токарева Дар'я
 
 //Юрій Світуха
