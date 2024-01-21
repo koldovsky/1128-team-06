@@ -9,7 +9,14 @@ function greet (name, owner) {
 //Юрій Світуха
 
 //Ярема Наталія
-
+function greet (name,owner) {
+  if (name===owner) {
+   return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
+}
+console.log(greet("Roman", "Roman"));
 //Михальська Мар'яна
 
 //Мучкін Олександр
