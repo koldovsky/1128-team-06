@@ -1,7 +1,9 @@
 //Тимчук Юрій
 
 //Ткач Євген
-
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest';
+}
 //Токарева Дар'я
 
 //Юрій Світуха
