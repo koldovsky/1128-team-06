@@ -22,7 +22,16 @@ console.log(greet("Roman", "Roman"));
 //Мучкін Олександр
 
 //Радіонов Павло
+function greet(name, owner) {
+  if (name === owner) {
+    return "Hello boss";
+  } else {
+    return "Hello guest";
+  }
+}
 
+// Виклик функції з параметрами "Pavlo" і "Pavlo"
+console.log(greet("Pavlo", "Pavlo"));
 //Волохов Антон
 
 //Затонський Степан 
