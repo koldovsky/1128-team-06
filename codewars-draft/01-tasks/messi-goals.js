@@ -1,16 +1,18 @@
 //Тимчук Юрій
 
 //Ткач Євген
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 //Токарева Дар'я
-
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
 //Юрій Світуха
 
 //Ярема Наталія
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) 
-{return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 var totalGoalsScored = goals(5, 10, 2);
 console.log(goals);
@@ -27,8 +29,8 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
 //  Використання:
 var messiManyGoals = goals(5, 10, 2);
 // Вивід:
-console.log(messiManyGoals);  // вивід: 17
+console.log(messiManyGoals); // вивід: 17
 
 //Волохов Антон
 
-//Затонський Степан 
+//Затонський Степан
