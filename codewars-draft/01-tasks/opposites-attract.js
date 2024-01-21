@@ -15,7 +15,14 @@ function lovefunc(flower1, flower2){
 //Мучкін Олександр
 
 //Радіонов Павло
-
+function lovefunc(flower1, flower2) {
+  // Перевіряю, чи кількість пелюсток різна за парність
+  return (flower1 % 2 === 0 && flower2 % 2 !== 0) || (flower1 % 2 !== 0 && flower2 % 2 === 0);
+}
+// використання:
+console.log(lovefunc(2, 3)); // Вивід: true
+console.log(lovefunc(4, 6)); // Вивід: false
+console.log(lovefunc(7, 8)); // Вивід: true
 //Волохов Антон
 
 //Затонський Степан 
