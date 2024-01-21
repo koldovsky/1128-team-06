@@ -1,7 +1,9 @@
 //Тимчук Юрій
 
 //Ткач Євген
-
+function lovefunc(flower1, flower2){
+  return flower1 % 2 !== flower2 % 2;
+}
 //Токарева Дар'я
 
 //Юрій Світуха
