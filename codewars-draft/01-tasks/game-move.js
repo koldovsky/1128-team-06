@@ -9,7 +9,9 @@ function move (position, roll) {
 //Юрій Світуха
 
 //Ярема Наталія
-
+function move (position, roll){
+  return (position+2*roll);
+}
 //Михальська Мар'яна
 
 //Мучкін Олександр
