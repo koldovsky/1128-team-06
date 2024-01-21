@@ -1,7 +1,9 @@
 //Тимчук Юрій
 
 //Ткач Євген
-
+function makeNegative(num) {
+  return num < 0 ? num : -num;
+}
 //Токарева Дар'я
 
 //Юрій Світуха
