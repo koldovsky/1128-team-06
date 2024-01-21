@@ -1,7 +1,9 @@
 //Тимчук Юрій
 
 //Ткач Євген
-
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
 //Токарева Дар'я
 
 //Юрій Світуха
