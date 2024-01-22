@@ -1,5 +1,9 @@
 //Тимчук Юрій
-
+function greet (name, owner) {
+  if (name===owner){
+    return "Hello boss";
+  } return "Hello guest"
+}
 //Ткач Євген
 function greet(name, owner) {
   return name === owner ? "Hello boss" : "Hello guest";
