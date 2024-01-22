@@ -9,6 +9,14 @@ function greet(name, owner) {
   return name === owner ? "Hello boss" : "Hello guest";
 }
 //Юрій Світуха
+function greet (name, owner) {
+  if(name === owner){
+    return "Hello boss"
+  }
+  else{
+    return "Hello guest"
+  }
+}
 
 //Ярема Наталія
 function greet(name, owner) {
