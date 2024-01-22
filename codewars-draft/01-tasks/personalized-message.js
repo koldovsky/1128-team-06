@@ -1,17 +1,19 @@
 //Тимчук Юрій
 
 //Ткач Євген
-function greet (name, owner) {
-  return name === owner ? 'Hello boss' : 'Hello guest';
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
 }
 //Токарева Дар'я
-
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}
 //Юрій Світуха
 
 //Ярема Наталія
-function greet (name,owner) {
-  if (name===owner) {
-   return "Hello boss";
+function greet(name, owner) {
+  if (name === owner) {
+    return "Hello boss";
   } else {
     return "Hello guest";
   }
@@ -34,4 +36,4 @@ function greet(name, owner) {
 console.log(greet("Pavlo", "Pavlo"));
 //Волохов Антон
 
-//Затонський Степан 
+//Затонський Степан
