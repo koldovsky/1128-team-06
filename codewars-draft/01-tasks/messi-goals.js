@@ -1,4 +1,7 @@
 //Тимчук Юрій
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
 
 //Ткач Євген
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
