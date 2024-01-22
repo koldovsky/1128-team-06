@@ -22,11 +22,9 @@ function litres(time) {
 
 //Радіонов Павло
 function litres(time) {
-  // Помножую час на швидкість пиття води та заокруглюю вниз
+  // Помножую час на швидкість пиття води 
   return Math.floor(time * 0.5);
 }
-
-//  використання:
 console.log(litres(3)); // Вивід: 1
 console.log(litres(6.7)); // Вивід: 3
 console.log(litres(11.8)); // Вивід: 5
