@@ -147,6 +147,24 @@ body {
   }
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .pagination {
+    order: 2;
+  }
+}
+
+.pagination-buttons__button.button-secondary {
+  width: 28px;
+  height: unset;
+  aspect-ratio: 1 / 1;
+}
+
 .products-per-page-container {
   display: flex;
   align-items: center;
@@ -164,16 +182,6 @@ body {
   .products-per-page-container {
     margin-top: unset;
   }
-
-  .pagination-buttons {
-    order: 2;
-  }
-}
-
-.pagination-buttons__button.button-secondary {
-  width: 28px;
-  height: unset;
-  aspect-ratio: 1 / 1;
 }
 
 .products-per-page-label {
