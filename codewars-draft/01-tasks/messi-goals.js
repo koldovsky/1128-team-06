@@ -9,6 +9,10 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 //Юрій Світуха
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) { 
+  let result = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  return result;
+}
 
 //Ярема Наталія
 function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
