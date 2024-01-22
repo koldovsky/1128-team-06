@@ -20,7 +20,7 @@ function move(position, roll) {
 
 //Радіонов Павло
 function move(position, roll) {
-  var newPosition = position + roll * 2;
+  let newPosition = position + roll * 2;
   return newPosition;
 }
 console.log(move(3, 6)); // Вивід: 15
