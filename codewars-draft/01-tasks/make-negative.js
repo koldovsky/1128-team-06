@@ -1,5 +1,11 @@
 //Тимчук Юрій
-
+function makeNegative(num) {
+  if (num<=0){
+    return num;
+  } else if (num>0) {
+    return -num;
+  }
+}
 //Ткач Євген
 function makeNegative(num) {
   return num < 0 ? num : -num;
