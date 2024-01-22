@@ -30,11 +30,10 @@ function makeNegative(num) {
     // Якщо так, то змінюю його на від'ємне
     return -num;
   } else {
-    // Якщо воно вже від'ємне або дорівнює нулю, повертаю його без змін
+    // Якщо воно вже від'ємне, повертаю його без змін
     return num;
   }
 }
-// використання:
 console.log(makeNegative(1)); // вивід: -1
 console.log(makeNegative(-5)); // вивід: -5
 console.log(makeNegative(0)); // вивід: 0
