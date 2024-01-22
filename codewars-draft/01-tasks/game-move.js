@@ -1,16 +1,18 @@
 //Тимчук Юрій
 
 //Ткач Євген
-function move (position, roll) {
+function move(position, roll) {
   return position + roll * 2;
 }
 //Токарева Дар'я
-
+function move(position, roll) {
+  return position + roll * 2;
+}
 //Юрій Світуха
 
 //Ярема Наталія
-function move (position, roll){
-  return (position+2*roll);
+function move(position, roll) {
+  return position + 2 * roll;
 }
 //Михальська Мар'яна
 
@@ -26,4 +28,4 @@ function move(position, roll) {
 console.log(move(3, 6)); // Вивід: 15
 //Волохов Антон
 
-//Затонський Степан 
+//Затонський Степан
