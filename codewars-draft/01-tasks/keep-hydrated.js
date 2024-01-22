@@ -12,6 +12,9 @@ function litres(time) {
 //Юрій Світуха
 
 //Ярема Наталія
+function litres(time) {
+  return Math.floor(time*0.5);
+}
 
 //Михальська Мар'яна
 
