@@ -63,6 +63,7 @@
 @media (min-width: 1024px) {
   .header .header-nav__menu {
     position: relative;
+    height: 100%;
     top: 0;
     right: 0;
     padding: 0;
