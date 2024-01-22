@@ -9,6 +9,9 @@ function move(position, roll) {
   return position + roll * 2;
 }
 //Юрій Світуха
+function move (position, roll) {
+  return position + roll * 2
+}
 
 //Ярема Наталія
 function move(position, roll) {
