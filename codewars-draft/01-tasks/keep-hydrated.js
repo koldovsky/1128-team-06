@@ -10,6 +10,9 @@ function litres(time) {
   return litresPerHour * time - ((litresPerHour * time) % 1);
 }
 //Юрій Світуха
+function litres(time) {
+  return Math.floor(time * 0.5);
+}
 
 //Ярема Наталія
 function litres(time) {
