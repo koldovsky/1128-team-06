@@ -27,7 +27,7 @@ function goals(laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 //  Використання:
-var messiManyGoals = goals(5, 10, 2);
+let messiManyGoals = goals(5, 10, 2);
 // Вивід:
 console.log(messiManyGoals); // вивід: 17
 
