@@ -40,6 +40,7 @@ function lovefunc(flower1, flower2) {
 console.log(lovefunc(2, 3)); // Вивід: true
 console.log(lovefunc(4, 6)); // Вивід: false
 console.log(lovefunc(7, 8)); // Вивід: true
+
 //Волохов Антон
 
 //Затонський Степан
@@ -52,6 +53,5 @@ function lovefunc(flower1, flower2) {
 }
 let x = lovefunc(1, 2);
 console.log(x);
-
 // якщо обидва аргумента функції діляться на два без остачі або з остачею одночасно,
 // вони не закохані, а це просто симпатія( 
