@@ -20,10 +20,9 @@ function move(position, roll) {
 
 //Радіонов Павло
 function move(position, roll) {
-  let newPosition = position + roll * 2;
-  return newPosition;
+  let new_position = position + roll * 2;
+  return new_position;
 }
-console.log(move(3, 6)); // Вивід: 15
 //Волохов Антон
 
 //Затонський Степан
