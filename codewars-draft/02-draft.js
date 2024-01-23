@@ -432,7 +432,10 @@ function cockroachSpeed(s) {
 //Юрій Світуха
 
 //Ярема Наталія
-
+function cockroachSpeed(s) {
+  return( Math.floor(100000*s/3600));
+ }
+ 
 //Михальська Мар'яна
 
 //Мучкін Олександр
