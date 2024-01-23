@@ -249,7 +249,18 @@ function warnTheSheep(queue) {
   }
 }
 //Токарева Дар'я
-
+function warnTheSheep(queue) {
+  let j = 0;
+  for(i=queue.length-1; i>=0; i--){
+    if(queue[i]==='wolf'){
+      if(j===0){
+        return "Pls go away and stop eating my sheep";
+      }
+      return "Oi! Sheep number "+(j)+"! You are about to be eaten by a wolf!";
+    }
+    j++;
+  }
+}
 //Юрій Світуха
 
 //Ярема Наталія
