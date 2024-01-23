@@ -6,7 +6,26 @@
 //Ткач Євген
 
 //Токарева Дар'я
-
+function stringToArray(string){
+    let wordsArr = [];
+    let currentWord= '';
+    
+    for(let i=0; i<string.length; i++){
+      if(string[i]!==' ' && i!==string.length-1){
+      currentWord+=string[i];
+      }
+      else if(string[i]!==' ' && i===string.length-1){
+        currentWord+=string[i];
+        wordsArr.push(currentWord);
+        console.log('latest symbol',wordsArr);
+      }
+      else{
+        wordsArr.push(currentWord);
+        currentWord='';
+      }
+      }
+    return wordsArr;
+  }
 //Юрій Світуха
 
 //Ярема Наталія
