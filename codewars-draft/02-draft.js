@@ -371,6 +371,10 @@ function doubleInteger(i) {
 //Юрій Світуха
 
 //Ярема Наталія
+function doubleInteger(i) {
+  if (Number.isInteger(i))
+  return (2*i);
+}
 
 //Михальська Мар'яна
 
@@ -402,6 +406,9 @@ function century(year) {
 //Юрій Світуха
 
 //Ярема Наталія
+function century(year) {
+  return (Math.ceil(year/100))  ;
+}
 
 //Михальська Мар'яна
 
@@ -632,6 +639,10 @@ function isDivisible(n, x, y) {
 //Юрій Світуха
 
 //Ярема Наталія
+function isDivisible(n, x, y) {
+  return(n % x === 0 && n % y === 0)
+  }
+
 
 //Михальська Мар'яна
 
