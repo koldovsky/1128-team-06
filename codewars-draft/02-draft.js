@@ -99,6 +99,15 @@ function DNAtoRNA(dnaString) {
 //Юрій Світуха
 
 //Ярема Наталія
+var min = function(list){
+    
+    return Math.min.apply(null,list);
+}
+var max = function(list){
+   
+    return Math.max.apply(null,list);
+}
+console.log(Math.max(1, 3, 2))
 
 //Михальська Мар'яна
 
