@@ -294,7 +294,13 @@ function maps(x) {
   return x.map((item) => item * 2);
 }
 //Токарева Дар'я
-
+function maps(x){
+  let arr=[];
+  for(i=0;i<x.length;i++){
+    arr[i]=x[i]*2;
+  }
+  return arr;
+}
 //Юрій Світуха
 
 //Ярема Наталія
