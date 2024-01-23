@@ -17,6 +17,14 @@
 
 //Радіонов Павло
 
+function stringToArray(inputString) {
+    return inputString.split(" ");
+}
+let result1 = stringToArray("Robin Singh");
+console.log(result1);  
+let result2 = stringToArray("I love arrays they are my favorite");
+console.log(result2);
+
 //Волохов Антон
 
 //Затонський Степан
@@ -43,6 +51,11 @@
 //Мучкін Олександр
 
 //Радіонов Павло
+
+function DNAtoRNA(dnaString) {
+    const rnaString = dnaString.replace(/T/g, 'U');
+    return rnaString;
+}
 
 //Волохов Антон
 
@@ -71,6 +84,14 @@
 
 //Радіонов Павло
 
+function max(numbers) {
+    return numbers.reduce((maxValue, current) => Math.max(maxValue, current), -Infinity);
+}
+
+function min(numbers) {
+    return numbers.reduce((minValue, current) => Math.min(minValue, current), Infinity);
+}
+
 //Волохов Антон
 
 //Затонський Степан
@@ -97,6 +118,14 @@
 //Мучкін Олександр
 
 //Радіонов Павло
+
+function min(arr, returnType) {
+    if (returnType === 'value') {
+        return Math.min(...arr);
+    } else if (returnType === 'index') {
+        return arr.indexOf(Math.min(...arr));
+    }
+}
 
 //Волохов Антон
 
@@ -125,6 +154,13 @@
 
 //Радіонов Павло
 
+function warnTheSheep(queue) {
+    const wolfIndex = queue.reverse().indexOf('wolf');
+    return wolfIndex === 0
+        ? "Pls go away and stop eating my sheep"
+        : `Oi! Sheep number ${wolfIndex}! You are about to be eaten by a wolf!`;
+}
+
 //Волохов Антон
 
 //Затонський Степан
@@ -151,6 +187,10 @@
 //Мучкін Олександр
 
 //Радіонов Павло
+function maps(arr) {
+
+    return arr.map(value => value * 2);
+}
 
 //Волохов Антон
 
@@ -178,6 +218,10 @@
 //Мучкін Олександр
 
 //Радіонов Павло
+
+function firstNonConsecutive(arr) {
+    return arr.find((value, index) => index > 0 && value !== arr[index - 1] + 1) || null;
+}
 
 //Волохов Антон
 
