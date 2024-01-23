@@ -109,7 +109,27 @@ function DNAtoRNA(dnaString) {
 //Ткач Євген
 
 //Токарева Дар'я
-
+var min = function(list){
+    let minNum=list[0];
+    
+    for(i=0; i<list.length; i++){
+      if(list[i]<minNum){
+        minNum=list[i];
+      }
+    }
+      return minNum;
+  }
+  
+  var max = function(list){
+    let maxNum=list[0];
+    
+    for(i=0; i<list.length; i++){
+      if(list[i]>maxNum){
+        maxNum=list[i];
+      }
+      }
+      return maxNum;
+  }
 //Юрій Світуха
 
 //Ярема Наталія
