@@ -20,7 +20,6 @@ function stringToArray(string){
       else if(string[i]!==' ' && i===string.length-1){
         currentWord+=string[i];
         wordsArr.push(currentWord);
-        console.log('latest symbol',wordsArr);
       }
       else{
         wordsArr.push(currentWord);
@@ -66,7 +65,18 @@ console.log(result2);
 //Ткач Євген
 
 //Токарева Дар'я
-
+function DNAtoRNA(dna) {
+    let rna='';
+    for(i=0;i<dna.length;i++){
+      if(dna[i]==='T'){
+        rna += 'U';
+      }
+      else{
+        rna += dna[i];
+      }
+    }
+    return rna;
+  }
 //Юрій Світуха
 
 //Ярема Наталія
