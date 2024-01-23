@@ -355,7 +355,10 @@ function firstNonConsecutive(arr) {
 //Юрій Світуха
 
 //Ярема Наталія
-
+function otherAngle(a, b) {
+  
+    return ((180-a-b));
+  }
 //Михальська Мар'яна
 
 //Мучкін Олександр
