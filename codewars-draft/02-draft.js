@@ -13,7 +13,7 @@ function stringToArray(string) {
   let wordsArr = [];
   let currentWord = "";
 
-  for (i = 0; i < string.length; i++) {
+  for (let i = 0; i < string.length; i++) {
     if (string[i] === " ") {
       if (currentWord !== "") {
         wordsArr.push(currentWord);
@@ -68,7 +68,7 @@ function DNAtoRNA(dna) {
 //Токарева Дар'я
 function DNAtoRNA(dna) {
   let rna = "";
-  for (i = 0; i < dna.length; i++) {
+  for (let i = 0; i < dna.length; i++) {
     if (dna[i] === "T") {
       rna += "U";
     } else {
@@ -117,7 +117,7 @@ var max = function (list) {
 var min = function(list){
     let minNum=list[0];
     
-    for(i=0; i<list.length; i++){
+    for(let i=0; i<list.length; i++){
       if(list[i]<minNum){
         minNum=list[i];
       }
@@ -251,7 +251,7 @@ function warnTheSheep(queue) {
 //Токарева Дар'я
 function warnTheSheep(queue) {
   let j = 0;
-  for(i=queue.length-1; i>=0; i--){
+  for(let i=queue.length-1; i>=0; i--){
     if(queue[i]==='wolf'){
       if(j===0){
         return "Pls go away and stop eating my sheep";
@@ -296,7 +296,7 @@ function maps(x) {
 //Токарева Дар'я
 function maps(x){
   let arr=[];
-  for(i=0;i<x.length;i++){
+  for(let i=0;i<x.length;i++){
     arr[i]=x[i]*2;
   }
   return arr;
