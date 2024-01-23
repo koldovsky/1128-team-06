@@ -504,6 +504,9 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 //Юрій Світуха
 
 //Ярема Наталія
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(2 * (dadYearsOld - sonYearsOld) - dadYearsOld);
+}
 
 //Михальська Мар'яна
 
