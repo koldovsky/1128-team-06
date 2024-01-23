@@ -29,6 +29,9 @@ function stringToArray(string){
 //Юрій Світуха
 
 //Ярема Наталія
+function stringToArray(inputString) {
+    return (inputString.split(" "));
+   }
 
 //Михальська Мар'яна
 
