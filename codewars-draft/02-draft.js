@@ -4,6 +4,9 @@
 //Тимчук Юрій
 
 //Ткач Євген
+function stringToArray(string){
+	return string.split(" ");
+}
 
 //Токарева Дар'я
 function stringToArray(string){
