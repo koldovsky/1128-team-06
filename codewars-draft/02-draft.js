@@ -337,6 +337,9 @@ function doubleInteger(i) {
 //Мучкін Олександр
 
 //Радіонов Павло
+function doubleInteger(n) {
+  return n * 2;
+}
 
 //Волохов Антон
 
@@ -365,6 +368,9 @@ function century(year) {
 //Мучкін Олександр
 
 //Радіонов Павло
+function century(year) {
+  return Math.floor((year - 1) / 100) + 1;
+}
 
 //Волохов Антон
 
@@ -392,6 +398,9 @@ function cockroachSpeed(s) {
 //Мучкін Олександр
 
 //Радіонов Павло
+function cockroachSpeed(I) {
+  return Math.floor((I * 100000) / 3600);
+}
 
 //Волохов Антон
 
@@ -421,6 +430,9 @@ function otherAngle(a, b) {
 //Мучкін Олександр
 
 //Радіонов Павло
+function otherAngle(angle1, angle2) {
+  return 180 - angle1 - angle2;
+}
 
 //Волохов Антон
 
@@ -448,7 +460,9 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 //Мучкін Олександр
 
 //Радіонов Павло
-
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
 //Волохов Антон
 
 //Затонський Степан
@@ -475,6 +489,9 @@ function nthEven(n) {
 //Мучкін Олександр
 
 //Радіонов Павло
+function nthEven(n) {
+  return n * 2 - 2;
+}
 
 //Волохов Антон
 
@@ -503,7 +520,17 @@ function getRealFloor(n) {
 //Мучкін Олександр
 
 //Радіонов Павло
-
+function getRealFloor(americanFloor) {
+  if (americanFloor <= 0) {
+      return americanFloor;
+  } else if (americanFloor === 1) {
+      return 0;
+  } else if (americanFloor >= 13) {
+      return americanFloor - 2;
+  } else {
+      return americanFloor - 1;
+  }
+}
 //Волохов Антон
 
 //Затонський Степан
@@ -533,6 +560,14 @@ function past(h, m, s) {
 //Мучкін Олександр
 
 //Радіонов Павло
+function past(h, m, s) {
+  const millisecondsInSecond = 1000;
+  const secondsInMinute = 60;
+  const minutesInHour = 60;
+  return (h * minutesInHour * secondsInMinute * millisecondsInSecond) +
+         (m * secondsInMinute * millisecondsInSecond) +
+         (s * millisecondsInSecond);
+}
 
 //Волохов Антон
 
@@ -560,6 +595,9 @@ function isDivisible(n, x, y) {
 //Мучкін Олександр
 
 //Радіонов Павло
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
 
 //Волохов Антон
 
