@@ -183,7 +183,30 @@ function min(arr, toReturn) {
   return toReturn === "value" ? minValue : arr.indexOf(minValue);
 }
 //Токарева Дар'я
+function min(arr, toReturn) {
+  if(toReturn==='value'){
+    return minValue(arr);
+  }
+  else{
+    return minIndex(arr);
+  }
+}
 
+function minValue(arr){
+  return arr[minIndex(arr)];
+}
+
+function minIndex(arr){
+  let minNumIndex=0;
+  let minNum=arr[0];
+  for(let i=0;i<arr.length; i++){
+    if(arr[i]<minNum){
+      minNum=arr[i];
+      minNumIndex=i;
+    }
+  }
+  return minNumIndex;
+}
 //Юрій Світуха
 
 //Ярема Наталія
