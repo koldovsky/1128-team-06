@@ -10,23 +10,24 @@ function stringToArray(string){
 
 //Токарева Дар'я
 function stringToArray(string){
-    let wordsArr = [];
-    let currentWord= '';
+    let wordsArr=[];
+    let currentWord='';
     
-    for(let i=0; i<string.length; i++){
-      if(string[i]!==' ' && i!==string.length-1){
-      currentWord+=string[i];
-      }
-      else if(string[i]!==' ' && i===string.length-1){
-        currentWord+=string[i];
-        wordsArr.push(currentWord);
-      }
-      else{
-        wordsArr.push(currentWord);
+    for(i=0; i<string.length; i++){
+      if(string[i]===' '){
+        if(currentWord!==''){
+          wordsArr.push(currentWord);
+        }
         currentWord='';
       }
+      else{
+        currentWord+=string[i];
       }
-    return wordsArr;
+      if(i===string.length-1){
+        wordsArr.push(currentWord);
+      }
+    }
+      return wordsArr;
   }
 //Юрій Світуха
 
