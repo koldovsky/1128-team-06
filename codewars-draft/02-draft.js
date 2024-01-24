@@ -265,7 +265,16 @@ function min(arr, returnType) {
 //A wolf in sheep's clothing
 
 //Тимчук Юрій
-
+  
+function warnTheSheep(queue) {
+  let reversedQueue=[...queue].reverse()
+  let positionOfWolf = reversedQueue.indexOf("wolf");
+  
+  return positionOfWolf === 0
+    ? "Pls go away and stop eating my sheep"
+    : `Oi! Sheep number ${positionOfWolf}! You are about to be eaten by a wolf!`;
+}
+  
 //Ткач Євген
 function warnTheSheep(queue) {
   for (let i = queue.length - 1; i >= 0; i--) {
