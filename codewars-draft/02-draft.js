@@ -50,7 +50,9 @@ function stringToArray(inputString) {
   return inputString.split(" ");
 }
 //Волохов Антон
-
+function stringToArray(string){
+  return string.split(" ")
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -102,7 +104,9 @@ function DNAtoRNA(dnaString) {
   return rnaString;
 }
 //Волохов Антон
-
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U');
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -177,6 +181,13 @@ function min(numbers) {
     (minValue, current) => Math.min(minValue, current),Infinity);
 }
 //Волохов Антон
+var min = function (list) {
+  return Math.min(...list);
+};
+
+var max = function (list) {
+  return Math.max(...list);
+};
 
 //Затонський Степан
 
@@ -238,6 +249,10 @@ function min(arr, returnType) {
   }
 }
 //Волохов Антон
+function min(arr, toReturn) {
+  const smallest = Math.min(...arr);
+  return toReturn === "value" ? smallest : arr.indexOf(smallest);
+}
 
 //Затонський Степан
 
@@ -298,7 +313,12 @@ function warnTheSheep(queue) {
     : `Oi! Sheep number ${wolfIndex}! You are about to be eaten by a wolf!`;
 }
 //Волохов Антон
-
+function warnTheSheep(queue) {
+  const positionOfWolf = queue.reverse().indexOf("wolf");
+  return positionOfWolf === 0
+    ? "Pls go away and stop eating my sheep"
+    : `Oi! Sheep number ${positionOfWolf}! You are about to be eaten by a wolf!`;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -342,7 +362,9 @@ function maps(arr) {
 }
 
 //Волохов Антон
-
+function maps(x) {
+  return x.map(item => item * 2);
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -395,7 +417,14 @@ function firstNonConsecutive(arr) {
     null);
 }
 //Волохов Антон
-
+function firstNonConsecutive(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] !== arr[i - 1] + 1) {
+      return arr[i];
+    }
+  }
+  return null;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -434,7 +463,9 @@ function doubleInteger(n) {
   return n * 2;
 }
 //Волохов Антон
-
+function doubleInteger(i) {
+  return i * 2;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -474,7 +505,9 @@ function century(year) {
   return Math.floor((year - 1) / 100) + 1;
 }
 //Волохов Антон
-
+function century(year) {
+  return Math.ceil(year / 100);
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -509,7 +542,9 @@ function cockroachSpeed(s) {
   return Math.floor((s * 100000) / 3600);
 }
 //Волохов Антон
-
+function cockroachSpeed(s) {
+  return Math.floor(s * 27.7778);
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -540,7 +575,9 @@ function otherAngle(a, b) {
   return 180 - a - b;
 }
 //Волохов Антон
-
+function otherAngle(a, b) {
+  return 180 - a - b;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -572,7 +609,9 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(dadYearsOld - 2 * sonYearsOld);
 }
 //Волохов Антон
-
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - 2 * sonYearsOld);
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -603,7 +642,9 @@ function nthEven(n) {
   return n * 2 - 2;
 }
 //Волохов Антон
-
+function nthEven(n) {
+  return 2 * (n - 1);
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -641,7 +682,10 @@ function getRealFloor(americanFloor) {
   }
 }
 //Волохов Антон
-
+function getRealFloor(n) {
+  if (n <= 0) return n;
+  return n - (n >= 13 ? 2 : 1);
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -681,7 +725,9 @@ function past(h, m, s) {
 }
 
 //Волохов Антон
-
+function past(h, m, s) {
+  return ((h * 60 + m) * 60 + s) * 1000;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -714,7 +760,9 @@ function isDivisible(n, x, y) {
 }
 
 //Волохов Антон
-
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
