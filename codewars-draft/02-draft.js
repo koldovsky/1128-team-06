@@ -64,6 +64,17 @@ console.log(result2);
 
 //Тимчук Юрій
 
+function DNAtoRNA(dna) {
+  let resultRna = dna.split("");
+  for (let i = 0; i < resultRna.length; i++) {
+    if (resultRna[i] === "T") {
+      resultRna[i] = "U";
+    }
+  }
+  let rna = resultRna.join("");
+  return rna;
+}
+
 //Ткач Євген
 function DNAtoRNA(dna) {
   return dna.replaceAll("T", "U");
