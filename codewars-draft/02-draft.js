@@ -35,7 +35,7 @@ function stringToArray(string) {
 //Юрій Світуха
 function stringToArray(string) {
   return string.split(" ");
-
+}
 //Ярема Наталія
 function stringToArray(inputString) {
   return inputString.split(" ");
@@ -139,27 +139,27 @@ var max = function (list) {
   return list[0];
 };
 //Токарева Дар'я
-var min = function(list){
-    let minNum=list[0];
-    
-    for(let i=0; i<list.length; i++){
-      if(list[i]<minNum){
-        minNum=list[i];
-      }
+var min = function (list) {
+  let minNum = list[0];
+
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] < minNum) {
+      minNum = list[i];
     }
-      return minNum;
   }
-  
-  var max = function(list){
-    let maxNum=list[0];
-    
-    for(i=0; i<list.length; i++){
-      if(list[i]>maxNum){
-        maxNum=list[i];
-      }
-      }
-      return maxNum;
+  return minNum;
+};
+
+var max = function (list) {
+  let maxNum = list[0];
+
+  for (i = 0; i < list.length; i++) {
+    if (list[i] > maxNum) {
+      maxNum = list[i];
+    }
   }
+  return maxNum;
+};
 //Юрій Світуха
 
 //Ярема Наталія
@@ -214,25 +214,24 @@ function min(arr, toReturn) {
 }
 //Токарева Дар'я
 function min(arr, toReturn) {
-  if(toReturn==='value'){
+  if (toReturn === "value") {
     return minValue(arr);
-  }
-  else{
+  } else {
     return minIndex(arr);
   }
 }
 
-function minValue(arr){
+function minValue(arr) {
   return arr[minIndex(arr)];
 }
 
-function minIndex(arr){
-  let minNumIndex=0;
-  let minNum=arr[0];
-  for(let i=0;i<arr.length; i++){
-    if(arr[i]<minNum){
-      minNum=arr[i];
-      minNumIndex=i;
+function minIndex(arr) {
+  let minNumIndex = 0;
+  let minNum = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < minNum) {
+      minNum = arr[i];
+      minNumIndex = i;
     }
   }
   return minNumIndex;
@@ -265,16 +264,16 @@ function min(arr, returnType) {
 //A wolf in sheep's clothing
 
 //Тимчук Юрій
-  
+
 function warnTheSheep(queue) {
-  let reversedQueue=[...queue].reverse()
+  let reversedQueue = [...queue].reverse();
   let positionOfWolf = reversedQueue.indexOf("wolf");
-  
+
   return positionOfWolf === 0
     ? "Pls go away and stop eating my sheep"
     : `Oi! Sheep number ${positionOfWolf}! You are about to be eaten by a wolf!`;
 }
-  
+
 //Ткач Євген
 function warnTheSheep(queue) {
   for (let i = queue.length - 1; i >= 0; i--) {
@@ -290,12 +289,12 @@ function warnTheSheep(queue) {
 //Токарева Дар'я
 function warnTheSheep(queue) {
   let j = 0;
-  for(let i=queue.length-1; i>=0; i--){
-    if(queue[i]==='wolf'){
-      if(j===0){
+  for (let i = queue.length - 1; i >= 0; i--) {
+    if (queue[i] === "wolf") {
+      if (j === 0) {
         return "Pls go away and stop eating my sheep";
       }
-      return "Oi! Sheep number "+(j)+"! You are about to be eaten by a wolf!";
+      return "Oi! Sheep number " + j + "! You are about to be eaten by a wolf!";
     }
     j++;
   }
@@ -333,10 +332,10 @@ function maps(x) {
   return x.map((item) => item * 2);
 }
 //Токарева Дар'я
-function maps(x){
-  let arr=[];
-  for(let i=0;i<x.length;i++){
-    arr[i]=x[i]*2;
+function maps(x) {
+  let arr = [];
+  for (let i = 0; i < x.length; i++) {
+    arr[i] = x[i] * 2;
   }
   return arr;
 }
@@ -372,11 +371,11 @@ function firstNonConsecutive(arr) {
   return null;
 }
 //Токарева Дар'я
-function firstNonConsecutive (arr) {
-  for(let i=0; i<arr.length; i++){
-    if(i>0){
-      let diff = arr[i]-arr[i-1];
-      if(diff!==1){
+function firstNonConsecutive(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (i > 0) {
+      let diff = arr[i] - arr[i - 1];
+      if (diff !== 1) {
         return arr[i];
       }
     }
@@ -418,14 +417,13 @@ function doubleInteger(i) {
 //Токарева Дар'я
 function doubleInteger(i) {
   // i will be an integer. Double it and return it.
-  return i*2;
+  return i * 2;
 }
 //Юрій Світуха
 
 //Ярема Наталія
 function doubleInteger(i) {
-  if (Number.isInteger(i))
-  return (2*i);
+  if (Number.isInteger(i)) return 2 * i;
 }
 
 //Михальська Мар'яна
@@ -455,11 +453,10 @@ function century(year) {
 }
 //Токарева Дар'я
 function century(year) {
-  let century=(year-year%100)/100;
-  if(year%100>0){
-    return century+1;
-  }
-  else if(year%100===0){
+  let century = (year - (year % 100)) / 100;
+  if (year % 100 > 0) {
+    return century + 1;
+  } else if (year % 100 === 0) {
     return century;
   }
 }
@@ -467,7 +464,7 @@ function century(year) {
 
 //Ярема Наталія
 function century(year) {
-  return (Math.ceil(year/100))  ;
+  return Math.ceil(year / 100);
 }
 
 //Михальська Мар'яна
@@ -496,16 +493,16 @@ function cockroachSpeed(s) {
 }
 //Токарева Дар'я
 function cockroachSpeed(s) {
-  let cmSec = s*100000/3600;
-  return (s!==0) ? Math.floor(cmSec) : 0;
+  let cmSec = (s * 100000) / 3600;
+  return s !== 0 ? Math.floor(cmSec) : 0;
 }
 //Юрій Світуха
 
 //Ярема Наталія
 function cockroachSpeed(s) {
-  return( Math.floor(100000*s/3600));
- }
- 
+  return Math.floor((100000 * s) / 3600);
+}
+
 //Михальська Мар'яна
 
 //Мучкін Олександр
@@ -599,9 +596,9 @@ function nthEven(n) {
 //Юрій Світуха
 
 //Ярема Наталія
-function nthEven(n){
-  return(n*2-2)
-    }
+function nthEven(n) {
+  return n * 2 - 2;
+}
 //Михальська Мар'яна
 
 //Мучкін Олександр
@@ -640,13 +637,13 @@ function getRealFloor(n) {
 //Радіонов Павло
 function getRealFloor(americanFloor) {
   if (americanFloor <= 0) {
-      return americanFloor;
+    return americanFloor;
   } else if (americanFloor === 1) {
-      return 0;
+    return 0;
   } else if (americanFloor >= 13) {
-      return americanFloor - 2;
+    return americanFloor - 2;
   } else {
-      return americanFloor - 1;
+    return americanFloor - 1;
   }
 }
 //Волохов Антон
@@ -661,7 +658,7 @@ function getRealFloor(americanFloor) {
 //Тимчук Юрій
 
 //Ткач Євген
-function past(h, m, s){
+function past(h, m, s) {
   return h * 3600000 + m * 60000 + s * 1000;
 }
 //Токарева Дар'я
@@ -682,9 +679,11 @@ function past(h, m, s) {
   const millisecondsInSecond = 1000;
   const secondsInMinute = 60;
   const minutesInHour = 60;
-  return (h * minutesInHour * secondsInMinute * millisecondsInSecond) +
-         (m * secondsInMinute * millisecondsInSecond) +
-         (s * millisecondsInSecond);
+  return (
+    h * minutesInHour * secondsInMinute * millisecondsInSecond +
+    m * secondsInMinute * millisecondsInSecond +
+    s * millisecondsInSecond
+  );
 }
 
 //Волохов Антон
@@ -708,9 +707,8 @@ function isDivisible(n, x, y) {
 
 //Ярема Наталія
 function isDivisible(n, x, y) {
-  return(n % x === 0 && n % y === 0)
-  }
-
+  return n % x === 0 && n % y === 0;
+}
 
 //Михальська Мар'яна
 
