@@ -427,6 +427,10 @@ function firstNonConsecutive(arr) {
 
 //Тимчук Юрій
 
+function doubleInteger(i) {
+  return i * 2;
+}
+
 //Ткач Євген
 function doubleInteger(i) {
   return i * 2;
