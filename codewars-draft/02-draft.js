@@ -36,7 +36,7 @@ function stringToArray(string) {
 function stringToArray(string) {
   return string.split(" ");
 }
-//Ярема Наталія
+//Ярема Наталія + 1
 function stringToArray(inputString) {
   return inputString.split(" ");
 }
@@ -102,7 +102,7 @@ function DNAtoRNA(dna) {
 
 //Мучкін Олександр
 
-//Радіонов Павло
+//Радіонов Павло +1
 
 function DNAtoRNA(dnaString) {
   const rnaString = dnaString.replace(/T/g, "U");
@@ -175,7 +175,7 @@ console.log(Math.max(1, 3, 2));
 
 //Мучкін Олександр
 
-//Радіонов Павло
+//Радіонов Павло +1
 
 function max(numbers) {
   return numbers.reduce(
@@ -244,7 +244,7 @@ function minIndex(arr) {
 
 //Мучкін Олександр
 
-//Радіонов Павло
+//Радіонов Павло + 1
 
 function min(arr, returnType) {
   if (returnType === "value") {
@@ -286,7 +286,7 @@ function warnTheSheep(queue) {
     }
   }
 }
-//Токарева Дар'я
+//Токарева Дар'я + 1
 function warnTheSheep(queue) {
   let j = 0;
   for (let i = queue.length - 1; i >= 0; i--) {
@@ -335,7 +335,7 @@ function maps(x) {
   return doubledX;
 };
   
-//Ткач Євген
+//Ткач Євген + 1 
 function maps(x) {
   return x.map((item) => item * 2);
 }
@@ -387,7 +387,7 @@ function firstNonConsecutive(arr) {
   }
   return null;
 }
-//Токарева Дар'я
+//Токарева Дар'я + 1 
 function firstNonConsecutive(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (i > 0) {
@@ -442,7 +442,7 @@ function doubleInteger(i) {
 }
 //Юрій Світуха
 
-//Ярема Наталія
+//Ярема Наталія +1
 function doubleInteger(i) {
   if (Number.isInteger(i)) return 2 * i;
 }
