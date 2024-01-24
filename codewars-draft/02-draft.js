@@ -363,7 +363,17 @@ function firstNonConsecutive(arr) {
   return null;
 }
 //Токарева Дар'я
-
+function firstNonConsecutive (arr) {
+  for(let i=0; i<arr.length; i++){
+    if(i>0){
+      let diff = arr[i]-arr[i-1];
+      if(diff!==1){
+        return arr[i];
+      }
+    }
+  }
+  return null;
+}
 //Юрій Світуха
 
 //Ярема Наталія
