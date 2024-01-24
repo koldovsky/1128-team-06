@@ -451,7 +451,7 @@ function century(year) {
     return century+1;
   }
   else if(year%100===0){
-    return century
+    return century;
   }
 }
 //Юрій Світуха
