@@ -3,57 +3,52 @@
 @import "header-nav.css";
 @import "footer.css";
 
-.item-page .item__link {
-    font-family: 'Poppins', sans-serif;
-    size: 16px;
-    color: rgb(51, 51, 51);
+/* .item-page__container { */
+/* } */
+.item__link {
+  color: var(--text-main-color);
 }
-
-.item-page .item__minor-photo-grid {
-    width: 580px;
+/* .item__images {
+} */
+.item__photo {
+  width: 358px;
+  height: 428px;
 }
-
-.item-page .item__photo {
-    width: 450px;
+.item__minor-photo-grid {
+  display: inline-flex;
+  width: 582px;
+  height: 118px;
 }
-
-.item-page .item__minor-photo {
-    display: grid;
-    grid-row: 1;
-    width: 130px;
-    gap: 20px;
+.item__minor-photo {
+  width: 104px;
+  height: 106px;
+  margin: 6px;
 }
-
-.item-page .item__stock {
-    font-family: 'Poppins', sans-serif;
-    size: 16px;
-    color: #7bb57c
+.item__description-block {
+  /* float: right; */
 }
-
-.item-page .item__name {
-    font-family: 'Poppins', sans-serif;
-    color: rgb(51, 51, 51)
+.item__stock {
+  color: var(--accent-color);
 }
-
-.item-page .item__code {
-    font-family: 'Poppins', sans-serif;
-    size: 16px;
-    color: var(--text-main-color);
+.item__name {
+  color: var(--text-main-color);
 }
-
-.item-page .item__price {
-    color: var(--accent-color);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    size: 20px;
+.item__code {
+  color: var(--text-main-color);
 }
-
-.item-page .item__button {
-    background-color: var(--accent-color);
-    border: 0;
-    color: #fff;
-    border-radius: 5px;
-    padding: 15px 15px;
-    font-size: 12px;
-    font-weight: 600;
+.item__price {
+  color: var(--text-main-color);
+}
+.button-secondary {
+  width: 484px;
+  height: 48px;
+  background-color: var(--accent-color);
+  border: 1.6;
+  border-radius: 8px;
+}
+.item__description {
+  color: var(--text-main-color);
+}
+.item__description-text {
+  color: var(--text-main-color);
 }
