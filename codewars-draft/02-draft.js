@@ -371,6 +371,15 @@ function maps(arr) {
 
 //Тимчук Юрій
 
+function firstNonConsecutive(arr) {
+  for (let i = 0, j = 1; i < arr.length - 1 && j < arr.length; i++, j++) {
+    if (arr[i] + 1 != arr[j]) {
+      return arr[j];
+    }
+  }
+  return null;
+}
+
 //Ткач Євген
 function firstNonConsecutive(arr) {
   for (let i = 1; i < arr.length - 1; i++) {
