@@ -326,7 +326,15 @@ function warnTheSheep(queue) {
 //Beginner - Lost Without a Map
 
 //Тимчук Юрій
-
+  
+function maps(x) {
+  let doubledX=[];
+  for (let i=0; i<x.length;i++){
+    doubledX.push(x[i]*2);
+  }
+  return doubledX;
+};
+  
 //Ткач Євген
 function maps(x) {
   return x.map((item) => item * 2);
