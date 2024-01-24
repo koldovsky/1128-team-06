@@ -407,7 +407,10 @@ function doubleInteger(i) {
   return i * 2;
 }
 //Токарева Дар'я
-
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i*2;
+}
 //Юрій Світуха
 
 //Ярема Наталія
@@ -442,7 +445,15 @@ function century(year) {
   return year % 100 == 0 ? approxCentury : approxCentury + 1;
 }
 //Токарева Дар'я
-
+function century(year) {
+  let century=(year-year%100)/100;
+  if(year%100>0){
+    return century+1;
+  }
+  else if(year%100===0){
+    return century
+  }
+}
 //Юрій Світуха
 
 //Ярема Наталія
