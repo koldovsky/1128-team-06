@@ -495,7 +495,10 @@ function cockroachSpeed(s) {
   return Math.floor((s * 100000) / 3600);
 }
 //Токарева Дар'я
-
+function cockroachSpeed(s) {
+  let cmSec = s*100000/3600;
+  return (s!==0) ? Math.floor(cmSec) : 0;
+}
 //Юрій Світуха
 
 //Ярема Наталія
