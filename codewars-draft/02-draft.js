@@ -33,6 +33,8 @@ function stringToArray(string) {
   return wordsArr;
 }
 //Юрій Світуха
+function stringToArray(string) {
+  return string.split(" ");
 
 //Ярема Наталія
 function stringToArray(inputString) {
