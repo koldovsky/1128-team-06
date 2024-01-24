@@ -118,6 +118,14 @@ function DNAtoRNA(dnaString) {
 
 //Тимчук Юрій
 
+var min = function (list) {
+  return Math.min(...list);
+};
+
+var max = function (list) {
+  return Math.max(...list);
+};
+
 //Ткач Євген
 var min = function (list) {
   list.sort((a, b) => a - b);
