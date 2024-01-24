@@ -1,53 +1,20 @@
 .bestsellers {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    overflow-wrap: break-word;
 }
-
+.bestsellers__header {
+}
 .bestsellers__header-text {
-    color: var(--text-main-color);
-    text-align: center;
-    font-weight: 500;
 }
-
 .bestsellers__text {
-    size: 16px;
-    color: var(--text-main-color);
-    text-align: center;
 }
-
+.bestsellers__item-grid {
+}
 .bestsellers__item {
-    width: 340px;
-    height: 464px;
-    text-align: center;
 }
-
 .bestsellers__photo {
-    width: 300px;
 }
-
 .bestsellers__photo-caption {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    size: 18px;
-    color: var(--text-main-color);
 }
-
 .bestsellers__price {
-    color: var(--accent-color);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    size: 20px;
 }
-
 .bestsellers__button {
-    background-color: var(--accent-color);
-    border: 0;
-    color: #fff;
-    border-radius: 5px;
-    padding: 15px 15px;
-    font-size: 12px;
-    font-weight: 600;
 }
