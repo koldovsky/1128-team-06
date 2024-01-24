@@ -1,20 +1,62 @@
 .bestsellers {
+    width: 1268px;
+    height: 842px;
+    /* background-size: cover; */
+    background-color: var(--background-color);
+    
 }
 .bestsellers__header {
+    padding-top: 90px;
+   
 }
 .bestsellers__header-text {
+    text-align: center;
+    color: var(--text-main-color);
 }
 .bestsellers__text {
+    text-align: center;
+    margin-top: 25px;
+    color: var(--text-main-color);
 }
 .bestsellers__item-grid {
+    width: 1200px;
+    height: 514px;
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .bestsellers__item {
+    width: 448px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
 }
 .bestsellers__photo {
+    width: 330px;
+    height: 370px;
 }
 .bestsellers__photo-caption {
+    margin-top: 24px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-size: 500;
+    color: var(--text-main-color);
 }
 .bestsellers__price {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-left: 8px;
+    margin-right: 8px;
 }
-.bestsellers__button {
+.button-secondary {
+    width: 110px;
+    height: 42px;
+    border-radius: 8px;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    
 }
