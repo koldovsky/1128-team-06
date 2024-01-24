@@ -3,6 +3,10 @@
 
 //Тимчук Юрій
 
+function stringToArray(string) {
+  return string.split(" ");
+}
+
 //Ткач Євген
 function stringToArray(string) {
   return string.split(" ");
