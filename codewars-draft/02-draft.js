@@ -200,6 +200,11 @@ function min(numbers) {
 
 //Тимчук Юрій
 
+function min(arr, toReturn) {
+  smallest = Math.min(...arr);
+  return toReturn === "value" ? smallest : arr.indexOf(smallest);
+}
+
 //Ткач Євген
 function min(arr, toReturn) {
   const minValue = Math.min(...arr);
