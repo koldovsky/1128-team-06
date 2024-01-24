@@ -46,15 +46,9 @@ function stringToArray(inputString) {
 //Мучкін Олександр
 
 //Радіонов Павло
-
 function stringToArray(inputString) {
   return inputString.split(" ");
 }
-let result1 = stringToArray("Robin Singh");
-console.log(result1);
-let result2 = stringToArray("I love arrays they are my favorite");
-console.log(result2);
-
 //Волохов Антон
 
 //Затонський Степан
@@ -103,12 +97,10 @@ function DNAtoRNA(dna) {
 //Мучкін Олександр
 
 //Радіонов Павло +1
-
 function DNAtoRNA(dnaString) {
   const rnaString = dnaString.replace(/T/g, "U");
   return rnaString;
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -176,21 +168,14 @@ console.log(Math.max(1, 3, 2));
 //Мучкін Олександр
 
 //Радіонов Павло +1
-
 function max(numbers) {
   return numbers.reduce(
-    (maxValue, current) => Math.max(maxValue, current),
-    -Infinity
-  );
+    (maxValue, current) => Math.max(maxValue, current),-Infinity);
 }
-
 function min(numbers) {
   return numbers.reduce(
-    (minValue, current) => Math.min(minValue, current),
-    Infinity
-  );
+    (minValue, current) => Math.min(minValue, current),Infinity);
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -245,7 +230,6 @@ function minIndex(arr) {
 //Мучкін Олександр
 
 //Радіонов Павло + 1
-
 function min(arr, returnType) {
   if (returnType === "value") {
     return Math.min(...arr);
@@ -253,7 +237,6 @@ function min(arr, returnType) {
     return arr.indexOf(Math.min(...arr));
   }
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -308,14 +291,12 @@ function warnTheSheep(queue) {
 //Мучкін Олександр
 
 //Радіонов Павло
-
 function warnTheSheep(queue) {
   const wolfIndex = queue.reverse().indexOf("wolf");
   return wolfIndex === 0
     ? "Pls go away and stop eating my sheep"
     : `Oi! Sheep number ${wolfIndex}! You are about to be eaten by a wolf!`;
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -408,14 +389,11 @@ function firstNonConsecutive(arr) {
 //Мучкін Олександр
 
 //Радіонов Павло
-
 function firstNonConsecutive(arr) {
   return (
     arr.find((value, index) => index > 0 && value !== arr[index - 1] + 1) ||
-    null
-  );
+    null);
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -455,7 +433,6 @@ function doubleInteger(i) {
 function doubleInteger(n) {
   return n * 2;
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -496,7 +473,6 @@ function century(year) {
 function century(year) {
   return Math.floor((year - 1) / 100) + 1;
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -529,10 +505,9 @@ function cockroachSpeed(s) {
 //Мучкін Олександр
 
 //Радіонов Павло
-function cockroachSpeed(I) {
-  return Math.floor((I * 100000) / 3600);
+function cockroachSpeed(s) {
+  return Math.floor((s * 100000) / 3600);
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -561,10 +536,9 @@ function otherAngle(a, b) {
 //Мучкін Олександр
 
 //Радіонов Павло
-function otherAngle(angle1, angle2) {
-  return 180 - angle1 - angle2;
+function otherAngle(a, b) {
+  return 180 - a - b;
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -628,7 +602,6 @@ function nthEven(n) {
 function nthEven(n) {
   return n * 2 - 2;
 }
-
 //Волохов Антон
 
 //Затонський Степан
@@ -704,7 +677,7 @@ function past(h, m, s) {
     h * minutesInHour * secondsInMinute * millisecondsInSecond +
     m * secondsInMinute * millisecondsInSecond +
     s * millisecondsInSecond
-  );
+    );
 }
 
 //Волохов Антон
