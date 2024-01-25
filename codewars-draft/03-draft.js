@@ -54,7 +54,9 @@ function circleCircumference(circle) {
 //Юрій Світуха
 
 //Ярема Наталія
-
+function circleCircumference(circle) {
+    return 2*Math.PI*circle.radius;
+}
 //Михальська Мар'яна
 
 //Мучкін Олександр
