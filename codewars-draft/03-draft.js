@@ -45,7 +45,7 @@ class SmallestIntegerFinder {
 
 //Тимчук Юрій
 
-//Ткач Євген
+//Ткач Євген +1
 function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
 }
@@ -60,7 +60,9 @@ function circleCircumference(circle) {
 //Мучкін Олександр
 
 //Радіонов Павло
-
+function circleCircumference(circle) {
+  return 2 * Math.PI * circle.radius;
+}
 //Волохов Антон
 
 //Затонський Степан
@@ -136,15 +138,15 @@ function giveMeFive(obj) {
 
 //Радіонов Павло
 
-function fruitsFun(n) {
-    const fruits = [];
-    for (let i = 0; i < n; i++) {
-      fruits.push(function () {
-        return i;
-      });
-    }
-    return fruits;
+function buildFun(n) {
+  let build = [];
+  for (let i = 0; i < n; i++) {
+    build.push(function () {
+      return i;
+    });
   }
+  return build;
+}
   
 //Волохов Антон
 
@@ -196,6 +198,18 @@ class Dog extends Animal {
 //Мучкін Олександр
 
 //Радіонов Павло
+
+class Shark extends Animal {
+  constructor(name, age, status) { super(name, age, 0, "shark", status); }
+}
+class Cat extends Animal {
+  constructor(name, age, status) { super(name, age, 4, "cat", status); }
+  introduce() { return `${super.introduce()}  Meow meow!`; }
+}
+class Dog extends Animal {
+  constructor(name, age, status, master) { super(name, age, 4, "dog", status); this.master = master; }
+  greetMaster() { return `Hello ${this.master}`; }
+}
 
 //Волохов Антон
 
