@@ -17,6 +17,18 @@
 
 //Радіонов Павло
 
+class SmallestIntegerFinder {
+    findSmallestInt(arr) {
+        let smallest = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < smallest) {
+                smallest = arr[i];
+            }
+        }
+        return smallest;
+    }
+}
+
 //Волохов Антон
 
 //Затонський Степан
@@ -70,6 +82,19 @@
 
 //Радіонов Павло
 
+function giveMeFive(obj) {
+    const result = [];
+    for (const key in obj) {
+      if (key.length === 5) {
+        result.push(key);
+      }
+      if (obj[key].length === 5) {
+        result.push(obj[key]);
+      }
+    }
+    return result;
+  }
+  
 //Волохов Антон
 
 //Затонський Степан
@@ -98,6 +123,16 @@
 
 //Радіонов Павло
 
+function fruitsFun(n) {
+    const fruits = [];
+    for (let i = 0; i < n; i++) {
+      fruits.push(function () {
+        return i;
+      });
+    }
+    return fruits;
+  }
+  
 //Волохов Антон
 
 //Затонський Степан
