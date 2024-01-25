@@ -50,7 +50,7 @@
     margin-left: 8px;
     margin-right: 8px;
 }
-.button-secondary {
+.bestsellers .button-secondary {
     width: 110px;
     height: 42px;
     border-radius: 8px;
@@ -58,5 +58,4 @@
     font-weight: 700;
     font-size: 13px;
     text-transform: uppercase;
-    
 }

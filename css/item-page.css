@@ -39,10 +39,9 @@
 .item__price {
   color: var(--text-main-color);
 }
-.button-secondary {
+.item__description-block .button-secondary {
   width: 484px;
   height: 48px;
-  background-color: var(--accent-color);
   border: 1.6;
   border-radius: 8px;
 }
