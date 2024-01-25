@@ -14,7 +14,11 @@ class SmallestIntegerFinder {
 //Юрій Світуха
 
 //Ярема Наталія
-
+class SmallestIntegerFinder
+{findSmallestInt(args){
+ return Math.min (...args)                          
+  }
+ }
 //Михальська Мар'яна
 
 //Мучкін Олександр
