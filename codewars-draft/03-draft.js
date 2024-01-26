@@ -96,7 +96,17 @@ function giveMeFive(obj){
 //Юрій Світуха
 
 //Ярема Наталія
-
+function giveMeFive(obj){
+  const resultArray = [];
+  for (const key in obj){
+    if (key.length===5) {
+        resultArray.push(key);
+}  
+if (obj[key].length===5) {
+  resultArray.push(obj[key]);}  
+}
+  return resultArray;
+}
 //Михальська Мар'яна
 
 //Мучкін Олександр
