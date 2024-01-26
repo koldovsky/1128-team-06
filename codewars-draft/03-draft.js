@@ -38,7 +38,11 @@ class SmallestIntegerFinder {
 }
 
 //Волохов Антон
-
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -70,7 +74,9 @@ function circleCircumference(circle) {
   return 2 * Math.PI * circle.radius;
 }
 //Волохов Антон
-
+function circleCircumference(circle) {
+  return 2 * Math.PI * circle.radius;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -127,7 +133,20 @@ function giveMeFive(obj) {
   }
   
 //Волохов Антон
+function giveMeFive(obj) {
+  const result = [];
 
+  for (const key in obj) {
+      if (key.length === 5) {
+          result.push(key);
+      }
+      if (typeof obj[key] === 'string' && obj[key].length === 5 && obj[key] !== key) {
+          result.push(obj[key]);
+      }
+  }
+
+  return result;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -165,7 +184,20 @@ function buildFun(n) {
 }
   
 //Волохов Антон
+function buildFun(n) {
+  var res = [];
 
+  for (var i = 0; i < n; i++) {
+      // Create a closure
+      res.push((function(x) {
+          return function() {
+              return x;
+          }
+      })(i));
+  }
+
+  return res;
+}
 //Затонський Степан
 
 //Олексій Севастьянов
@@ -228,7 +260,30 @@ class Dog extends Animal {
 }
 
 //Волохов Антон
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 0, "shark", status);
+  }
+}
 
+class Cat extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 4, "cat", status);
+  }
+  introduce() {
+    return `${super.introduce()}  Meow meow!`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master) {
+    super(name, age, 4, "dog", status);
+    this.master = master;
+  }
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
+}
 //Затонський Степан
 
 //Олексій Севастьянов
