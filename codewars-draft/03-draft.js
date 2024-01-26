@@ -3,6 +3,12 @@
 
 //Тимчук Юрій
 
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
 //Ткач Євген
 class SmallestIntegerFinder {
   findSmallestInt(args) {
@@ -13,7 +19,7 @@ class SmallestIntegerFinder {
 
 //Юрій Світуха
 
-//Ярема Наталія
+//Ярема Наталія +1
 class SmallestIntegerFinder {
   findSmallestInt(args) {
     return Math.min(...args);
