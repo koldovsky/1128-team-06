@@ -29,7 +29,7 @@ img {
   width: 100%;
 }
 
-a {
+a, li {
   text-decoration: none;
 }
 

@@ -159,10 +159,19 @@ body {
   }
 }
 
-.pagination-buttons__button.button-secondary {
+.pagination-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.pagination-buttons .button-secondary {
   width: 28px;
   height: unset;
   aspect-ratio: 1 / 1;
+}
+
+.pagination-button--active {
+  background-color: var(--text-main-color);
 }
 
 .products-per-page-container {

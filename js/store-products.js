@@ -86,12 +86,77 @@ const productsList = [
   },
 ];
 
-function renderProducts() {
+let currentPage = 1;
+
+let selectElement = document.getElementById("products-per-page");
+let selectedOption = selectElement.options[selectElement.selectedIndex];
+// let productsPerPage = Number(selectedOption.value);
+let productsPerPage = 8;
+
+function displayProducts(prodsPerPage, pageNumber) {
+  const startIndex = prodsPerPage * (pageNumber - 1);
+  const endIndex = startIndex + prodsPerPage;
+
+  const productsOnPage = productsList.slice(startIndex, endIndex);
+  console.log(productsOnPage);
+
+  renderProducts(productsOnPage);
+}
+
+function displayPagination() {
+  const paginationButtons = document.querySelector(".pagination-buttons");
+  const buttonsAmount = Math.ceil(productsList.length / productsPerPage);
+  const arrowLeft = document.querySelector("#arrow-left");
+  const arrowRight = document.querySelector("#arrow-right");
+
+  arrowLeft.addEventListener("click", () => {
+    currentPage = currentPage === 1 ? buttonsAmount : currentPage - 1;
+    displayProducts(productsPerPage, currentPage);
+    document
+      .querySelector(".pagination-button--active")
+      .classList.remove("pagination-button--active");
+  })
+
+  arrowRight.addEventListener("click", () => {
+    currentPage = currentPage === buttonsAmount ? 1 : currentPage + 1;
+    displayProducts(productsPerPage, currentPage);
+    document
+      .querySelector(".pagination-button--active")
+      .classList.remove("pagination-button--active");
+  })
+
+  for (let i = 0; i < buttonsAmount; i++) {
+    const button = displayPaginationButton(i + 1);
+    paginationButtons.appendChild(button);
+  }
+}
+
+function displayPaginationButton(pageNumber) {
+  const button = document.createElement("li");
+  button.classList.add("button");
+  button.classList.add("button-secondary");
+  button.innerText = pageNumber;
+
+  if (currentPage == pageNumber)
+    button.classList.add("pagination-button--active");
+
+  button.addEventListener("click", () => {
+    currentPage = Number(button.innerText);
+    displayProducts(productsPerPage, currentPage);
+    document
+      .querySelector(".pagination-button--active")
+      .classList.remove("pagination-button--active");
+    button.classList.add("pagination-button--active");
+  });
+
+  return button;
+}
+
+function renderProducts(productsOnPage) {
   let productsDomString = "";
 
-  for (const product of productsList) {
-    productsDomString += 
-    `<div class="products-container__product">
+  for (const product of productsOnPage) {
+    productsDomString += `<div class="products-container__product">
       <a href="item-page.html" class="product__item">
         <div class="product__item--image-container">
           <img
@@ -108,4 +173,5 @@ function renderProducts() {
   document.querySelector(".products-container").innerHTML = productsDomString;
 }
 
-renderProducts();
+displayProducts(productsPerPage, currentPage);
+displayPagination();
