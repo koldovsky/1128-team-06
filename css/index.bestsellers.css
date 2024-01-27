@@ -3,11 +3,9 @@
     height: 842px;
     /* background-size: cover; */
     background-color: var(--background-color);
-    
 }
 .bestsellers__header {
     padding-top: 90px;
-   
 }
 .bestsellers__header-text {
     text-align: center;
