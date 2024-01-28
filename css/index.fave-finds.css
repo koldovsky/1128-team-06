@@ -1,6 +1,5 @@
 .fave-finds {
   height: auto;
-  padding: 40px 0px 50px 0px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -41,14 +40,15 @@ align-items: center;
 .tabs__content {
   order: 1;
   width: 100%;
-  border-bottom: 3px, solid, var(--accent-color);
+  border-bottom: 3px, solid, var(--text-light-color);
   line-height: 1.5;
   display: none;
+  border-top: 1px solid #ccc;
 }
 
 .tabs__label {
   padding: 15px 20px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .category-content {
@@ -60,7 +60,7 @@ align-items: center;
 
 .tab__toggler:checked+.tabs__label {
   font-weight: bold;
-  color: var(--accent-color);
+  color: var(--text-block-color);
   border-bottom: 2px solid var(--accent-color);
 }
 
@@ -68,6 +68,9 @@ align-items: center;
   display: initial;
 }
 
+.item__list{
+  padding:15px 0px 15px 0px;
+}
 .five__preview {
   width: 100%;
   height: auto;
@@ -88,7 +91,9 @@ align-items: center;
   text-align: center;
 }
 .order-button{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width:568px){
 
@@ -102,11 +107,13 @@ align-items: center;
   flex-direction: row;
 }
 .tabs__label {
-  margin: 5px 5px;
   cursor: pointer
 }
 .content__block {
   margin: 45px;
+}
+.item__list{
+  padding:15px 15px 15px 15px;
 }
 .navigation__tabs {
   display: flex;
