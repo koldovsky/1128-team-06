@@ -6,9 +6,6 @@
   flex-direction: column;
   justify-content: center;
 }
-.five-finds__content container{
-  
-}
 .fave-finds__title-text {
   display: flex;
   flex-direction: column;
@@ -25,7 +22,7 @@
   white-space: normal;
 }
 .fave-finds_content {
-width = 320;
+width: 320;
 align-items: center;
 }
 .navigation__tabs {
@@ -100,6 +97,9 @@ align-items: center;
 @media (min-width:992px){
   .tab-content {
     flex-direction: row;
+}
+.category-content{
+  flex-direction: row;
 }
 .tabs__label {
   margin: 5px 5px;
