@@ -153,12 +153,6 @@ body {
   gap: 10px;
 }
 
-@media (min-width: 768px) {
-  .pagination {
-    order: 2;
-  }
-}
-
 .pagination-buttons {
   display: flex;
   gap: 5px;

@@ -85,67 +85,80 @@ const productsList = [
     price: "210,00USD",
   },
 ];
-
 let currentPage = 1;
+let productsPerPage = 1;
 
-let selectElement = document.getElementById("products-per-page");
-let selectedOption = selectElement.options[selectElement.selectedIndex];
-// let productsPerPage = Number(selectedOption.value);
-let productsPerPage = 8;
+function displayProductsPerPageSelector() {
+  const selectElement = document.getElementById("products-per-page");
+  let selectedOption = selectElement.options[selectElement.selectedIndex];
+  productsPerPage = Number(selectedOption.value);
 
-function displayProducts(prodsPerPage, pageNumber) {
-  const startIndex = prodsPerPage * (pageNumber - 1);
-  const endIndex = startIndex + prodsPerPage;
+  selectElement.addEventListener("change", () => {
+    const selectedOption = selectElement.options[selectElement.selectedIndex];
+    for (let i = 0; i < selectElement.options.length; i++) {
+      selectElement.options[i].removeAttribute("selected");
+    }
+    selectedOption.setAttribute("selected", "selected");
 
+    productsPerPage = Number(selectedOption.value);
+    currentPage = 1;
+    displayProducts();
+    displayPagination();
+  });
+}
+
+function displayProducts() {
+  const startIndex = productsPerPage * (currentPage - 1);
+  const endIndex = startIndex + productsPerPage;
   const productsOnPage = productsList.slice(startIndex, endIndex);
-  console.log(productsOnPage);
 
   renderProducts(productsOnPage);
 }
 
 function displayPagination() {
   const paginationButtons = document.querySelector(".pagination-buttons");
+  paginationButtons.innerHTML = "";
   const buttonsAmount = Math.ceil(productsList.length / productsPerPage);
   const arrowLeft = document.querySelector("#arrow-left");
   const arrowRight = document.querySelector("#arrow-right");
-
-  arrowLeft.addEventListener("click", () => {
-    currentPage = currentPage === 1 ? buttonsAmount : currentPage - 1;
-    displayProducts(productsPerPage, currentPage);
-    document
-      .querySelector(".pagination-button--active")
-      .classList.remove("pagination-button--active");
-  })
-
-  arrowRight.addEventListener("click", () => {
-    currentPage = currentPage === buttonsAmount ? 1 : currentPage + 1;
-    displayProducts(productsPerPage, currentPage);
-    document
-      .querySelector(".pagination-button--active")
-      .classList.remove("pagination-button--active");
-  })
 
   for (let i = 0; i < buttonsAmount; i++) {
     const button = displayPaginationButton(i + 1);
     paginationButtons.appendChild(button);
   }
+
+  arrowLeft.addEventListener("click", () => {
+    document.getElementById(currentPage).classList.remove("pagination-button--active");
+    currentPage = currentPage === 1 ? buttonsAmount : currentPage - 1;
+    displayProducts();
+    document.getElementById(currentPage).classList.add("pagination-button--active");
+  });
+
+  arrowRight.addEventListener("click", () => {
+    document.getElementById(currentPage).classList.remove("pagination-button--active");
+    currentPage = currentPage === buttonsAmount ? 1 : currentPage + 1;
+    displayProducts();
+    document.getElementById(currentPage).classList.add("pagination-button--active");
+  });
+
+  console.log(paginationButtons);
 }
 
 function displayPaginationButton(pageNumber) {
-  const button = document.createElement("li");
+  const button = document.createElement("a");
+  button.setAttribute("href", "#products-container");
   button.classList.add("button");
   button.classList.add("button-secondary");
+  button.id = `${pageNumber}`;
   button.innerText = pageNumber;
 
   if (currentPage == pageNumber)
     button.classList.add("pagination-button--active");
 
   button.addEventListener("click", () => {
-    currentPage = Number(button.innerText);
-    displayProducts(productsPerPage, currentPage);
-    document
-      .querySelector(".pagination-button--active")
-      .classList.remove("pagination-button--active");
+    currentPage = Number(button.id);
+    displayProducts();
+    document.querySelector(".pagination-button--active").classList.remove("pagination-button--active");
     button.classList.add("pagination-button--active");
   });
 
@@ -173,5 +186,6 @@ function renderProducts(productsOnPage) {
   document.querySelector(".products-container").innerHTML = productsDomString;
 }
 
-displayProducts(productsPerPage, currentPage);
+displayProductsPerPageSelector();
+displayProducts();
 displayPagination();

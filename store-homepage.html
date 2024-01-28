@@ -21,7 +21,7 @@
           <h3 class="products__title">
             Products (<span id="products-amount">17</span>)
           </h3>
-          <div class="products-container"></div>
+          <div class="products-container" id="products-container"></div>
         </section>
         <div class="page-settings">
           <div class="pagination">
@@ -39,7 +39,7 @@
                 ></path>
               </svg>
             </div>
-            <ul class="pagination-buttons"></ul>
+            <div class="pagination-buttons"></div>
             <div class="pagination__arrow" id="arrow-right">
               <svg
                 width="16"
@@ -56,7 +56,6 @@
               </svg>
             </div>
           </div>
-
           <div class="products-per-page-container">
             <label for="products-per-page" class="products-per-page-label"
               >Products per page:</label
@@ -67,9 +66,9 @@
                 id="products-per-page"
                 class="products-per-page__select"
               >
-                <option value="20" selected>20</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
+                <option value="8" selected="selected">8</option>
+                <option value="16">16</option>
+                <option value="32">32</option>
               </select>
               <svg
                 width="10"
