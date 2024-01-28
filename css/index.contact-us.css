@@ -1,22 +1,30 @@
 .contact-us {
     background-color: var(--section-color);
+    padding: 90px 0;
 }
 
 .contact-us__form-container {
     font-size: 12px;
     background-color: var(--background-color);
+    padding: 0 40px;
+    margin: 0 30px;
+
 }
 
-
+.contact-us__form {
+    padding: 44px 0;
+    display: flex;
+    flex-direction: column;
+}
 
 .contact-us__form-input,
 .contact-us__form-textarea {
     color: var(--text-light-color);
-    display: block;
     border: 0;
-    margin: 12px 0px 0px;
+    margin: 12px 0px;
     padding: 20px 30px;
     border-radius: 5px;
+
 }
 
 .contact-us__form-button {
@@ -29,9 +37,18 @@
     font-size: 12px;
 }
 
+.contact-us__contact-info {
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.contact-us__contact-info:nth-child(n) {
+    margin: 16px 0;
+}
+
 .contact-info__title {
     font-size: 22px;
-    font-weight: 400;
+    
 }
 
 .contact-info__text {
@@ -55,3 +72,16 @@
     color: var(--text-main-color);
     display: block;
 }
+
+.contact-info__map {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;   
+}
+
+.contact-info__map iframe {
+    width: 100%;
+    filter: grayscale();
+}
+
+

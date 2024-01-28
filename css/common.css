@@ -9,9 +9,13 @@
 :root {
   --text-main-color: #333333;
   --text-light-color: #757171;
+  --text-tertiary-сolor: #fff;
   --accent-color: #7bb57c;
   --background-color: #f7f5f6;
+  --background-color-second: #fff;
   --section-color: #fff;
+  --text-block-color: grey;
+  --input-light-color: #c5cbd6;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
@@ -25,7 +29,7 @@ img {
   width: 100%;
 }
 
-a {
+a, li {
   text-decoration: none;
 }
 
@@ -34,10 +38,35 @@ h2 {
 }
 
 .container {
-  max-width: 1175px;
+  max-width: 1200px;
   margin: auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 15px;
+  }
 }
 
 .highlighted-text {
   color: var(--accent-color);
+  font-weight: 700;
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
 }

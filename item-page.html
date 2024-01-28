@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sofa shop</title>
+    <title>Item page</title>
     <link rel="shortcut icon" href="img/sofa-favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/item-page.css" />
   </head>
   <body>
-    <header>
-      <nav data-include="header-nav.partial.html"></nav>
+    <header class="header">
+      <div data-include="header-nav.partial.html"></div>
     </header>
-    <section class="item-page">
+    <section class="item-page__container">
       <a href="store-homepage.html" class="item__link">Store homepage</a>
       <div class="item__images">
         <img
@@ -47,7 +47,7 @@
           <p class="item__code">Product code 3</p>
           <p class="item__price">150,00USD</p>
           <hr />
-          <button class="item__button">Add to cart</button>
+          <button class="button button-secondary">Add to cart</button>
           <p class="item__description">DESCRIPTION</p>
           <hr />
           <p class="item__description-text">
@@ -61,5 +61,6 @@
     </section>
     <footer data-include="footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

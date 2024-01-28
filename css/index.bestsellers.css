@@ -1,57 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+.bestsellers {
+    width: 1268px;
+    height: 842px;
+    /* background-size: cover; */
+    background-color: var(--background-color);
+}
+.bestsellers__header {
+    padding-top: 90px;
+}
 .bestsellers__header-text {
-    font-family: 'Poppins', sans-serif;
-    size: 24px;
-    color: var(--text-main-color);
     text-align: center;
+    color: var(--text-main-color);
 }
-
 .bestsellers__text {
-    font-family: 'Poppins', sans-serif;
-    size: 16px;
-    color: var(--text-main-color);
     text-align: center;
+    margin-top: 25px;
+    color: var(--text-main-color);
 }
-
 .bestsellers__item-grid {
-    display: grid;
-    block-size: 390px;
-    gap: 110px;
-    grid-template-columns: repeat(auto-fill, minmax(290px, 290px));
-    align-tracks: end, start, end, space-between;
+    width: 1200px;
+    height: 514px;
+    display: inline-flex;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
-
 .bestsellers__item {
-    width: 340px;
-    height: 464px;
+    width: 448px;
+    padding-right: 15px;
+    padding-left: 15px;
     text-align: center;
 }
-
 .bestsellers__photo {
-    width: 300px;
+    width: 330px;
+    height: 370px;
 }
-
 .bestsellers__photo-caption {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    size: 18px;
+    margin-top: 24px;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-size: 500;
     color: var(--text-main-color);
 }
-
 .bestsellers__price {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
     color: var(--accent-color);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    size: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
-
-.bestsellers__button {
-    background-color: var(--accent-color);
-    border: 0;
-    color: #fff;
-    border-radius: 5px;
-    padding: 15px 15px;
-    font-size: 12px;
-    font-weight: 600;
+.bestsellers .button-secondary {
+    width: 110px;
+    height: 42px;
+    border-radius: 8px;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
 }

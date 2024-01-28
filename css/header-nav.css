@@ -1,0 +1,165 @@
+.header {
+  position: relative;
+}
+
+.header-wrapper {
+  background: url("../img/header-background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+@media (min-width: 1024px) {
+  .header-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 102.8px;
+  }
+}
+
+.header-nav__logo {
+  max-width: 108px;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .header-nav__logo {
+    max-width: 90.54px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-nav__logo {
+    max-width: 108px;
+  }
+}
+
+.header .header-nav__menu{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: -100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  gap: 20px;
+  transition: left 0.5s ease;
+  font-size: 16px;
+  background: var(--text-tertiary-сolor);
+} 
+
+.header.responsive .header-nav__menu{
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  .header .header-nav__menu {
+    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    gap: 0;
+    flex-direction: row;
+    width: 730px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background: transparent;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-nav__menu {
+    width: 700px;
+  }
+}
+
+.header-nav__menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 30px;
+  min-width: 30px;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .header-nav__menu-button {
+    display: none;
+  }
+}
+
+.header__navicon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  position: relative;
+  background: var(--text-main-color);
+  transition: background 0.2s ease-out;
+}
+
+.header__navicon::before,
+.header__navicon::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: var(--text-main-color);
+  transition: all 0.2s ease-out;
+}
+
+.header__navicon::before {
+  top: 7px;
+}
+
+.header__navicon::after {
+  top: -7px;
+}
+
+.header.responsive .header__navicon {
+  background: transparent;
+}
+
+.header.responsive .header__navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header.responsive .header__navicon:after {
+  transform: rotate(45deg);
+}
+
+.header.responsive .header__navicon:before,
+.header.responsive .header__navicon:after {
+  top: 0;
+}
+
+.header-nav__link {
+  color: var(--text-main-color);
+  font-weight: 500;
+}
+
+.header-nav__link:hover {
+  color: var(--accent-color);
+}
+
+.header-nav__menu.button .button-primary {
+  font-size: 11px;
+  width: 103.66px;
+  height: 42.8px;
+  font-weight: 700;
+  color: var(--text-light-color);
+}

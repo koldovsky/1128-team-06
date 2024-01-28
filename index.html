@@ -10,8 +10,10 @@
   </head>
   <body>
     <header class="header">
-       <div data-include="header-nav.partial.html"></div>
-       <section data-include="index.header-hero.partial.html"></section>
+      <div class="header-wrapper">
+        <div data-include="header-nav.partial.html"></div>
+        <section data-include="index.header-hero.partial.html"></section>
+      </div>
     </header> 
     <main>
       <section data-include="index.promotions.partial.html"></section>
@@ -25,9 +27,9 @@
       <section data-include="index.about-us.partial.html"></section>
       <section data-include="index.blog-content.partial.html"></section>
       <section data-include="index.contact-us.partial.html"></section>
-      <section data-include="item-page.html"></section>
     </main>
     <footer data-include="footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

@@ -5,14 +5,14 @@
 
 .carousel-quotes__title {
     text-align: center;
-    color: #333333;
+    color: var(--text-main-color);
     font-size: 38px;
     font-weight: bold;
 }
 
 .carousel-quotes__subtitle {
     text-align: center;
-    color: #333333;
+    color: var(--text-main-color);
     font-size: 18px;
     margin-top: 25px;
     margin-bottom: 35px;
@@ -26,21 +26,21 @@
 .carousel-quotes__item {
     padding: 0px 15px;
     margin: 15px;
-    background-color: #FFFFFF;
+    background-color: var(--section-color);
     align-self: flex-start;
 }
 
 .carousel-quotes__item-name {
     font-family: "Poppins", sans-serif;
     font-size: 22px;
-    color: #333333;
+    color: var(--text-main-color);
     font-weight: bold;
 }
 
 .carousel-quotes__item-city {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
-    color: #2c2c2c;
+    color: var(--text-main-color);
     margin-top: 10px;
 }
 
@@ -48,13 +48,13 @@
     font-family: "Poppins", sans-serif;
     margin-top: 25px;
     font-size: 16px;
-    color: #707070;
+    color: var(--text-light-color);
 }
 
 .carousel-quotes__item-date {
     font-family: "Poppins", sans-serif;
     font-size: 14px;
-    color: #2c2c2c;
+    color: var(--text-main-color);
     margin-top: 15px;
     padding-bottom: 20px;
 }
@@ -68,13 +68,13 @@
 }
 
 .carousel-quotes__item-prev-button, .carousel-quotes__item-next-button {
-    color: #717171;
+    color: var(--text-light-color);
     border-width: 0;
 }
 
 .carousel-quotes__item-prev-button:hover, .carousel-quotes__item-next-button:hover {
-    color: #1d1a1a;
-    transition: 0,6s ease;
+    color: var(--text-main-color);
+    transition: 0.6s ease;
 }
 
 
