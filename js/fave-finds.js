@@ -1,0 +1,1 @@
+const best-products-images=document.querySelector(".five__preview")
