@@ -153,12 +153,12 @@ body {
   gap: 10px;
 }
 
-.pagination-buttons {
+.pagination__buttons {
   display: flex;
   gap: 5px;
 }
 
-.pagination-buttons .button-secondary {
+.pagination__buttons .button-secondary {
   width: 28px;
   height: unset;
   aspect-ratio: 1 / 1;

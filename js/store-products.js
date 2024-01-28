@@ -116,37 +116,19 @@ function displayProducts() {
 }
 
 function displayPagination() {
-  const paginationButtons = document.querySelector(".pagination-buttons");
+  const paginationButtons = document.querySelector(".pagination__buttons");
   paginationButtons.innerHTML = "";
   const buttonsAmount = Math.ceil(productsList.length / productsPerPage);
-  const arrowLeft = document.querySelector("#arrow-left");
-  const arrowRight = document.querySelector("#arrow-right");
 
   for (let i = 0; i < buttonsAmount; i++) {
     const button = displayPaginationButton(i + 1);
     paginationButtons.appendChild(button);
   }
-
-  arrowLeft.addEventListener("click", () => {
-    document.getElementById(currentPage).classList.remove("pagination-button--active");
-    currentPage = currentPage === 1 ? buttonsAmount : currentPage - 1;
-    displayProducts();
-    document.getElementById(currentPage).classList.add("pagination-button--active");
-  });
-
-  arrowRight.addEventListener("click", () => {
-    document.getElementById(currentPage).classList.remove("pagination-button--active");
-    currentPage = currentPage === buttonsAmount ? 1 : currentPage + 1;
-    displayProducts();
-    document.getElementById(currentPage).classList.add("pagination-button--active");
-  });
-
-  console.log(paginationButtons);
 }
 
 function displayPaginationButton(pageNumber) {
   const button = document.createElement("a");
-  button.setAttribute("href", "#products-container");
+  button.setAttribute("href", "#products");
   button.classList.add("button");
   button.classList.add("button-secondary");
   button.id = `${pageNumber}`;
