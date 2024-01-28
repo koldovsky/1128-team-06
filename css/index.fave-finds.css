@@ -1,76 +1,115 @@
 .fave-finds {
-  width: 1200px;
-  height: 652px;
+  height: auto;
+  padding: 40px 0px 50px 0px;
+  padding: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-
-.fave-finds__container {
+.five-finds__content container{
+  
+}
+.fave-finds__title-text {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: flex-start;
-}
-
-.fave-finds__header {
-  width: 1200px;
-  justify-content: left;
   text-align: left;
 }
-
-.tab-content {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
+.fave-finds__description-container{
+  padding-top: 20px;
 }
-
+.fave-finds__description-text {
+  margin: 30px, 0 0 0;
+  color: var(--text-main-color);
+  text-align: left;
+  white-space: normal;
+}
+.fave-finds_content {
+width = 320;
+align-items: center;
+}
 .navigation__tabs {
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
+  margin: 5px;
+  align-items: center;
 }
-.tabs__label {
-  margin: 55px, 55px;
-  cursor:pointer
-}
-.tab__fav {
+.tab__toggler {
   color: var(--text-light-color);
   font-size: 14px;
-  margin: 15px;
+  margin: 5px;
   display: none;
 }
-.tab__fav:checked +.tabs__label {
-  font-weight: bold;
-  color:var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
-}
-.tab__fav:checked +.tabs__label+.tabs__content1{
-  display:initial;
-}
-.tabs__content1 {
-  order:1;
+
+.tabs__content {
+  order: 1;
   width: 100%;
   border-bottom: 3px, solid, var(--accent-color);
   line-height: 1.5;
   display: none;
 }
-.five__preview {
-  width: 250px;
-  height: 250px;
-  padding: 15px;
+
+.tabs__label {
+  padding: 15px 20px;
+  cursor: pointer
 }
 
+.category-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tab__toggler:checked+.tabs__label {
+  font-weight: bold;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+.tab__toggler:checked+.tabs__label+.tabs__content {
+  display: initial;
+}
+
+.five__preview {
+  width: 100%;
+  height: auto;
+  padding: 1px;
+}
+.name_item-container{
+  text-align: center;
+}
+.name_item-text{
+  align-items: center;
+}
 .price__fav {
   color: var(--accent-color);
   margin: 8px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 14px;
-}
-.block__description {
-  font-family: 'Poppins', sans-serif;
-  /*size: 16px;*/
-  color: var(--text-main-color);
   text-align: center;
+}
+.order-button{
+  text-align: center;
+}
+@media (min-width:568px){
+
+}
+
+@media (min-width:992px){
+  .tab-content {
+    flex-direction: row;
+}
+.tabs__label {
+  margin: 5px 5px;
+  cursor: pointer
+}
+.content__block {
+  margin: 45px;
+}
+.navigation__tabs {
+  display: flex;
+ flex-wrap: wrap;
+}
 }
