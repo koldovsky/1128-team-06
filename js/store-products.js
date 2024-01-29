@@ -89,7 +89,7 @@ let currentPage = 1;
 let productsPerPage = 1;
 
 function displayProductsPerPageSelector() {
-  const selectElement = document.querySelector(".products-per-page");
+  const selectElement = document.querySelector("#products-per-page");
   let selectedOption = selectElement.options[selectElement.selectedIndex];
   productsPerPage = Number(selectedOption.value);
 
