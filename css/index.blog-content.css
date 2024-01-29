@@ -6,6 +6,10 @@
     padding-top: 40px;
     padding-bottom: 100px;
     background-color: var(--section-color);
+    display: flex;
+justify-content: space-between;
+align-items: center
+  
 }
 .our-blog__text-block {
     display: block;
@@ -13,18 +17,18 @@
     font-weight: bold;
     font-size: 38px;
     color: var(--text-main-color);
-    text-align: center;
+    text-align: left;
 }
 .our-blog__text {
     display: block;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: var(--text-main-color);
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     margin-bottom: 35px;
 }
-.custom-block {
+.custom-blog-block {
     font-family: 'Poppins', sans-serif;
     display: flex;
     height: 450px;
@@ -36,15 +40,26 @@
     align-items: center;
     border-width: 0,50px; 
     border-style: solid; 
-    border-color: var(--background-color);
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: var(--background-color-second);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .our-blog__table {
     padding-top: 90px;
     padding-bottom: 100px;
 }
-.our-blog__inner {
+.our-blog__inner1 {
     padding-left: 40px;
     padding-right: 40px;
 }
+.our-blog__inner2 {
+    display: flex;
+}
+#clock {
+    color: purple;
+    font-size: 5em;
+    font-weight: bold;
+    background-color: var(--background-color);
+    width: 20%;
+    text-align: center;
+  }
