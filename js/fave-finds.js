@@ -1,1 +1,1 @@
-const best-products-images=document.querySelector(".five__preview")
+const bestProductsImages = document.querySelector(".five__preview");
