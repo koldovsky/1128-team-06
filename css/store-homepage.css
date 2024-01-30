@@ -164,6 +164,12 @@ body {
   aspect-ratio: 1 / 1;
 }
 
+.pagination__arrow-left,
+.pagination__arrow-right {
+  font-size: 14px;
+  color: var(--input-light-color);
+}
+
 .pagination-button--active {
   background-color: var(--text-main-color);
 }

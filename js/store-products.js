@@ -3,6 +3,7 @@ const productsList = await response.json();
 
 let currentPage = 1;
 let productsPerPage = 1;
+let buttonsAmount = Math.ceil(productsList.length / productsPerPage)
 let currencyTo = "USD";
 let rate = 1;
 
@@ -70,7 +71,7 @@ function renderProducts(productsOnPage) {
 function displayPagination() {
   const paginationButtons = document.querySelector(".pagination__buttons");
   paginationButtons.innerHTML = "";
-  const buttonsAmount = Math.ceil(productsList.length / productsPerPage);
+  buttonsAmount = Math.ceil(productsList.length / productsPerPage);
 
   for (let i = 0; i < buttonsAmount; i++) {
     const button = displayPaginationButton(i + 1);
@@ -91,14 +92,26 @@ function displayPaginationButton(pageNumber) {
   button.addEventListener("click", () => {
     currentPage = Number(button.id);
     displayProducts();
-    document
-      .querySelector(".pagination-button--active")
-      .classList.remove("pagination-button--active");
+    document.querySelector(".pagination-button--active").classList.remove("pagination-button--active");
     button.classList.add("pagination-button--active");
   });
 
   return button;
 }
+
+document.querySelector(".pagination__arrow-left").addEventListener("click", () => {
+  document.getElementById(currentPage).classList.remove("pagination-button--active");
+  currentPage = currentPage === 1 ? buttonsAmount : currentPage - 1;
+  displayProducts();
+  document.getElementById(currentPage).classList.add("pagination-button--active");
+});
+
+document.querySelector(".pagination__arrow-right").addEventListener("click", () => {
+  document.getElementById(currentPage).classList.remove("pagination-button--active");
+  currentPage = currentPage === buttonsAmount ? 1 : currentPage + 1;
+  displayProducts();
+  document.getElementById(currentPage).classList.add("pagination-button--active");
+});
 
 displayProductsPerPageSelector();
 displayProducts();
