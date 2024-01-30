@@ -2,10 +2,17 @@ const response = await fetch("api/products.json");
 const productsList = await response.json();
 
 let currentPage = 1;
-let productsPerPage = 1;
-let buttonsAmount = Math.ceil(productsList.length / productsPerPage)
+const selectElement = document.querySelector("#products-per-page__select");
+const selectedOption = selectElement.options[selectElement.selectedIndex];
+let productsPerPage = Number(selectedOption.value);
+let buttonsAmount = Math.ceil(productsList.length / productsPerPage);
 let currencyTo = "USD";
 let rate = 1;
+
+const storeItemsAmount = productsList.length;
+const productsAmount = productsList.length;
+document.querySelector("#store-items-amount").innerText = storeItemsAmount;
+document.querySelector("#products-amount").innerText = productsAmount;
 
 async function changeCurrency() {
   const response = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
@@ -17,24 +24,12 @@ async function changeCurrency() {
 
 document.querySelector(".currency-selector__select").addEventListener("change", changeCurrency);
 
-function displayProductsPerPageSelector() {
-  const selectElement = document.querySelector("#products-per-page");
-  let selectedOption = selectElement.options[selectElement.selectedIndex];
-  productsPerPage = Number(selectedOption.value);
-
-  selectElement.addEventListener("change", () => {
-    const selectedOption = selectElement.options[selectElement.selectedIndex];
-    for (let i = 0; i < selectElement.options.length; i++) {
-      selectElement.options[i].removeAttribute("selected");
-    }
-    selectedOption.setAttribute("selected", "selected");
-
-    productsPerPage = Number(selectedOption.value);
-    currentPage = 1;
-    displayProducts();
-    displayPagination();
-  });
-}
+document.querySelector("#products-per-page__select").addEventListener("change", () => {
+  productsPerPage = document.querySelector("#products-per-page__select").value;
+  currentPage = 1;
+  displayProducts();
+  displayPagination();
+})
 
 function displayProducts() {
   const startIndex = productsPerPage * (currentPage - 1);
@@ -104,6 +99,7 @@ document.querySelector(".pagination__arrow-left").addEventListener("click", () =
   currentPage = currentPage === 1 ? buttonsAmount : currentPage - 1;
   displayProducts();
   document.getElementById(currentPage).classList.add("pagination-button--active");
+  document.querySelector(".products__title").scrollIntoView({behavior: "smooth"});
 });
 
 document.querySelector(".pagination__arrow-right").addEventListener("click", () => {
@@ -111,8 +107,8 @@ document.querySelector(".pagination__arrow-right").addEventListener("click", () 
   currentPage = currentPage === buttonsAmount ? 1 : currentPage + 1;
   displayProducts();
   document.getElementById(currentPage).classList.add("pagination-button--active");
+  document.querySelector(".products__title").scrollIntoView({behavior: "smooth"});
 });
 
-displayProductsPerPageSelector();
 displayProducts();
 displayPagination();

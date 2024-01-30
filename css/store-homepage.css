@@ -168,6 +168,8 @@ body {
 .pagination__arrow-right {
   font-size: 14px;
   color: var(--input-light-color);
+  height: 100%;
+  cursor: pointer;
 }
 
 .pagination-button--active {
@@ -235,14 +237,9 @@ body {
 .currency-selector__select,
 .currency-selector__select > option,
 .products-per-page__select {
-  font-size: 10px;
-  font-weight: 600;
-  color: var(--text-light-color);
-}
-
-.products-per-page__select {
   font-size: 13px;
   font-weight: 500;
+  color: var(--text-light-color);
 }
 
 .currency-selector__arrow ,
