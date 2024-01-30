@@ -1,12 +1,13 @@
 .top-collection {
 background: url("../img/top-collections.background.webp");
-box-sizing:border-box;
-}          
+} 
+
 .style {
 font-size: 50px;
 font-weight: 700px;
 color: var(--accent-color);
 width: 369px;
+line-height:63.8px
 }
 
 .top-collection__title_container {
@@ -16,7 +17,4 @@ align-items: center;
 font-size: 58px;
 font-weight: 700px;
 color: var(--text-main-color);
-width: 369px;
-line-height:63.8px;
-border-image-width:1;
 }
