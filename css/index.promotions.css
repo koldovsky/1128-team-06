@@ -1,3 +1,7 @@
+.promotions {
+    display: flex;
+}
+
 .promotions__img-container {
     width: 300px;
 }
