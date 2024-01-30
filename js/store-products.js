@@ -3,6 +3,18 @@ const productsList = await response.json();
 
 let currentPage = 1;
 let productsPerPage = 1;
+let currencyTo = "USD";
+let rate = 1;
+
+async function changeCurrency() {
+  const response = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
+  const currencies = await response.json();
+  currencyTo = document.querySelector(".currency-selector__select").value;
+  rate = currencies.rates[currencyTo];
+  displayProducts();
+}
+
+document.querySelector(".currency-selector__select").addEventListener("change", changeCurrency);
 
 function displayProductsPerPageSelector() {
   const selectElement = document.querySelector("#products-per-page");
@@ -31,6 +43,30 @@ function displayProducts() {
   renderProducts(productsOnPage);
 }
 
+function renderProducts(productsOnPage) {
+  let productsDomString = "";
+
+  for (const product of productsOnPage) {
+    productsDomString += `<div class="products-container__product">
+      <a href="item-page.html" class="product__item">
+        <div class="product__item--image-container">
+          <img
+            src="${product.img}"
+            alt="${product.name + " photo"}"
+          />
+        </div>
+        <p class="product__item-name">${product.name}</p>
+      </a>
+      <p class="product__price">${(product.price * rate)
+        .toFixed(2)
+        .toString()
+        .replace(".", ",")} ${currencyTo}</p>
+      <button class="button button-secondary">BUY</button>
+    </div>`;
+  }
+  document.querySelector(".products-container").innerHTML = productsDomString;
+}
+
 function displayPagination() {
   const paginationButtons = document.querySelector(".pagination__buttons");
   paginationButtons.innerHTML = "";
@@ -50,38 +86,18 @@ function displayPaginationButton(pageNumber) {
   button.id = `${pageNumber}`;
   button.innerText = pageNumber;
 
-  if (currentPage == pageNumber)
-    button.classList.add("pagination-button--active");
+  if (currentPage == pageNumber) button.classList.add("pagination-button--active");
 
   button.addEventListener("click", () => {
     currentPage = Number(button.id);
     displayProducts();
-    document.querySelector(".pagination-button--active").classList.remove("pagination-button--active");
+    document
+      .querySelector(".pagination-button--active")
+      .classList.remove("pagination-button--active");
     button.classList.add("pagination-button--active");
   });
 
   return button;
-}
-
-function renderProducts(productsOnPage) {
-  let productsDomString = "";
-
-  for (const product of productsOnPage) {
-    productsDomString += `<div class="products-container__product">
-      <a href="item-page.html" class="product__item">
-        <div class="product__item--image-container">
-          <img
-            src="${product.img}"
-            alt="${product.name + " photo"}"
-          />
-        </div>
-        <p class="product__item-name">${product.name}</p>
-      </a>
-      <p class="product__price">${product.price}</p>
-      <button class="button button-secondary">BUY</button>
-    </div>`;
-  }
-  document.querySelector(".products-container").innerHTML = productsDomString;
 }
 
 displayProductsPerPageSelector();

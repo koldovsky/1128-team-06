@@ -187,21 +187,35 @@ body {
   }
 }
 
+.products__currency {
+  margin-top: 25px;
+}
+
+.products__currency,
+.products__currency-selector {
+  display: flex;
+  align-items: center;
+}
+
+.products__currency-label,
 .products-per-page-label {
   color: var(--text-light-color);
   font-size: 12px;
 }
 
 @media (min-width: 768px) {
+  .products__currency-label,
   .products-per-page-label {
     font-size: 16px; 
   }
 }
 
+.products__currency-selector,
 .products-per-page {
   position: relative;
 }
 
+.currency-selector__select,
 .products-per-page__select {
   margin-left: 8px;
   width: 66px;
@@ -212,10 +226,24 @@ body {
   appearance: none;
 }
 
+.currency-selector__select,
+.currency-selector__select > option,
+.products-per-page__select {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-light-color);
+}
+
+.products-per-page__select {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.currency-selector__arrow ,
 .products-per-page__arrow {
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 8px;
   margin-top: -3px;
   pointer-events: none;
 }

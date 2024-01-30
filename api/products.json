@@ -2,86 +2,86 @@
   {
     "img": "img/products/minimal-3-piece.png",
     "name": "3-piece Minimal, ARM",
-    "price": "110,00USD"
+    "price": 110.00
   },
   {
     "img": "img/products/arona-armchair.png",
     "name": "Arona armchair, Hunderbolt studio",
-    "price": "150,00USD"
+    "price": 150.00
   },
   {
     "img": "img/products/aurora-armchair.png",
     "name": "Aurora armchair, MDS",
-    "price": "210,00USD"
+    "price": 210.00
   },
   {
     "img": "img/products/barr-armchair.png",
     "name": "Barr armchair, DoDo Design Bureau",
-    "price": "510,00USD"
+    "price": 510.00
   },
   {
     "img": "img/products/bubbles.png",
     "name": "Bubbles Udion",
-    "price": "410,00USD"
+    "price": 410.00
   },
   {
     "img": "img/products/cloud-armchair.png",
     "name": "Cloud armchair, DIX",
-    "price": "150,00USD"
+    "price": 150.00
   },
   {
     "img": "img/products/delar.png",
     "name": "Delar, Uni Studio",
-    "price": "350,00USD"
+    "price": 350.00
   },
   {
     "img": "img/products/fusion-armchair.png",
     "name": "Fusion armchair, LEXX",
-    "price": "320,00USD"
+    "price": 320.00
   },
   {
     "img": "img/products/hugo-table.png",
     "name": "Hugo table, KUKO studio",
-    "price": "99,00USD"
+    "price": 99.00
   },
   {
     "img": "img/products/lord-armchair.png",
     "name": "Lord armchair, Miedel Home",
-    "price": "120,00USD"
+    "price": 120.00
   },
   {
     "img": "img/products/monica-table.png",
     "name": "Monica table, Orro",
-    "price": "110,00USD"
+    "price": 110.00
   },
   {
     "img": "img/products/red-drops.png",
     "name": "Red Drops, KUKO",
-    "price": "210,00USD"
+    "price": 210.00
   },
   {
     "img": "img/products/snitch-cabinet.png",
     "name": "Snitch cabinet, ARM",
-    "price": "100,00USD"
+    "price": 100.00
   },
   {
     "img": "img/products/ultimate-green-chair.png",
     "name": "Ultimate Green chair, XODO",
-    "price": "90,00USD"
+    "price": 90.00
   },
   {
     "img": "img/products/upi-table.png",
     "name": "Upi table, Landstorm",
-    "price": "90,00USD"
+    "price": 90.00
   },
   {
     "img": "img/products/valetta-armchair.png",
     "name": "Valetta armchair, ZIX studio",
-    "price": "310,00USD"
+    "price": 310.00
   },
   {
     "img": "img/products/jeanie-armchair.png",
     "name": "Jeanine armchair, KUKO",
-    "price": "210,00USD"
+    "price": 210.00
   }
 ]
