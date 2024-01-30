@@ -3,7 +3,6 @@ background: url("../img/top-collections.background.webp");
 box-sizing:border-box;
 }          
 .style {
-
 font-size: 50px;
 font-weight: 700px;
 color: var(--accent-color);
