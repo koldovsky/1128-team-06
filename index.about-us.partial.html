@@ -1,15 +1,15 @@
 <section class="about__us">
   <div class="about__header">
     <div class="about__section">
-      <div class="about__section-text">
-        <div id="clock">10</div>
+      <div class="about__section-text container">
         <p class="about__header-title">About us</p>
         <p class="about__text">
           We sell designer furniture, lamps & decor across the USA
         </p>
-        <div>
+        <!--  обгортка для аккордеону -->
+        <div class="accordion-wrapper">
           <div class="accordion">
-            <!-- Accordion Item: How to make an order -->
+            <!-- аккордеон  -->
             <div class="accordion-item">
               <div class="accordion-header">
                 How to make an order
@@ -20,14 +20,14 @@
                   ></path>
                 </svg>
               </div>
-
               <div class="accordion-content">
                 <p>
-                  Specify the name of the preferred product in our contact form
-                  and provide all the needed details. Our manager will contact
-                  you soon after checking the stock status.
+                  Specify the name of the preferred product in our contact form and
+                  provide all the needed details. Our manager will contact you soon
+                  after checking the stock status.
                 </p>
               </div>
+              <hr class="custom-line" />
             </div>
             <!-- Accordion Item: Dispatch v Delivery -->
             <div class="accordion-item">
@@ -42,19 +42,19 @@
               </div>
               <div class="accordion-content">
                 <p>
-                  On the product page, you can see a dispatch estimate e.g.
-                  'within 2-3 weeks'. Dispatch is when we send the item to our
-                  delivery partner, not the date it is delivered to your door.
-                  If you need more accurate delivery times, check it with the
-                  manager.
+                  On the product page, you can see a dispatch estimate e.g. 'within
+                  2-3 weeks'. Dispatch is when we send the item to our delivery
+                  partner, not the date it is delivered to your door. If you need
+                  more accurate delivery times, check it with the manager.
                 </p>
               </div>
+              <hr class="custom-line" />
             </div>
-
             <!-- Accordion Item: Returns & Refunds -->
             <div class="accordion-item">
               <div class="accordion-header">
                 Returns & Refunds
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
                   <path
                     fill-rule="nonzero"
@@ -64,21 +64,46 @@
               </div>
               <div class="accordion-content">
                 <p>
-                  If you won't like the product, you can return it to us within
-                  14 days for a full refund. Simply contact us and we will
-                  assist you with your return. Remember that you'll need to
-                  disassemble the item and repackage it, in order for us to
-                  collect the product and return it to the warehouse.
+                  If you won't like the product, you can return it to us within 14
+                  days for a full refund. Simply contact us and we will assist you
+                  with your return. Remember that you'll need to disassemble the item
+                  and repackage it, in order for us to collect the product and return
+                  it to the warehouse.
                 </p>
               </div>
+              <hr class="custom-line" />
             </div>
           </div>
         </div>
       </div>
-      <!-- About Us Photo Container -->
-      <div class="about-us-photo-container">
-        <div class="about-us-photo">
-          <img src="img/about-us-photo.png" alt="about-us-image" />
+    </div>
+  </div>
+  <div class="about-us-photo container">
+    <div class="about-us-photo">
+      <div class="image-container">
+        <img src="img/about-us-photo.png" alt="about-us-image" />
+        <div class="svg-wrapper">
+          <div class="icon-panel">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 100"
+              enable-background="new 0 0 100 100"
+              xml:space="preserve"
+              class="icon-panel"
+              width="50"
+            >
+              <circle cx="50" cy="50" r="50" fill="white" id="background" />
+              <path
+                class="svg-foto"
+                d="M74.437,53.959c1.589-1.589,1.589-4.166,0-5.755c-0.416-0.416-40.529-25.479-40.766-25.598l-0.03-0.019l-0.002,0.001  c-0.539-0.263-1.136-0.424-1.775-0.424c-2.015,0-3.676,1.468-4.001,3.391L27.794,75.93c0,2.247,1.822,4.069,4.069,4.069  c0.635,0,1.228-0.158,1.763-0.417L74.437,53.959z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>

@@ -1,19 +1,30 @@
+.promotions {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 .promotions__img-container {
     width: 300px;
 }
 
 .promotions__item {
     display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
 }
 
 .promotions__item-img {
-    height: 238.781px;
-    font-weight: 400px;
+    height: 250px;
+    width: 380px;
+    font-weight: 250px;
     background-position: center;
-}
+ }
 
 .promotions__item-text {
-    font-weight: 500;
+    font-weight: 500px;
     color: var(--text-main-color);
 }
 

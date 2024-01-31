@@ -1,13 +1,25 @@
-              .style {
-                  font-size: 50px;
-                  font-weight: 700px;
-                  color: var(--accent-color);
-                  width: 369px;
-              }
+.top-collection {
+background: url("../img/top-collections.background.webp");
+font-weight: 400px;
+} 
 
-              .top-collection__title {
-                  font-size: 50px;
-                  font-weight: 700px;
-                  color: var(--text-main-color);
-                  width: 369px;
-              }
+.style {
+font-size: 58px;
+font-weight: 700px;
+color: var(--accent-color);
+}
+
+.styles {
+font-size: 58px;
+font-weight: 700px;
+color: var(--text-main-color);
+}
+
+.top-collection__title_container {
+display:flex;
+justify-content: center;
+align-items: center;                
+font-size: 58px;
+font-weight: 700px;
+color: var(--text-main-color);
+}

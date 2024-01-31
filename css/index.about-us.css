@@ -1,5 +1,6 @@
 .about__us {
-  flex-direction: row;
+  display: flex;
+  flex-direction: row; /* Зміна напрямку при зменшенні екрана */
   align-items: center;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -9,6 +10,13 @@
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .about-us-photo {
+    margin-top: 50px;
+    flex-direction: column;
+  }
 }
 .about__section-text {
   background-color: var(--background-color);
@@ -22,21 +30,47 @@
   text-align: center;
   display: flex;
 }
+.svg-foto {
+  width: 30px;
+  height: 30px;
+}
+.about-us-photo .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
-.about-us-photo-container {
-  padding-left: 15px;
-  padding-right: 15px;
+.about-us-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0;
+  left: 0;
 }
-@media (min-width: 500px) {
-  .about__section-text {
-    text-align: left;
-    flex-direction: column;
-  }
+.icon-panel {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
 }
+.about-us-photo .icon-panel {
+  width: 100%;
+  height: 40%;
+  fill: currentColor;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .accordion {
   display: flex;
   flex-direction: column;
-  width: 300px;
 }
 
 .accordion-item {
@@ -54,7 +88,6 @@
   font-size: 18px;
   font-weight: normal;
   color: var(--text-main-color);
-  border-bottom: 1px solid rgb(86, 86, 86);
 }
 
 .accordion-content {
@@ -62,17 +95,26 @@
   padding: 20px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.8s ease-in-out;
+  transition: max-height 0.6s ease-in-out;
 }
 
 .accordion-item.active .accordion-content {
   display: block;
   max-height: 300px;
 }
-
-#clock {
-  color: purple;
-  font-size: 5em;
-  text-align: center;
-  margin-top: 50px;
+.accordion-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.custom-line {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: rgb(157, 153, 153);
+  transition: max-height 0.6s ease-in-out;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 24px;
 }
