@@ -79,7 +79,8 @@ align-items: center;
 }
 
 .five__preview:hover {
-  padding: 0px;
+  width: 110%;
+  box-shadow: 0 4px 8px var(--text-light-color);
 }
 
 .name_item-container{
