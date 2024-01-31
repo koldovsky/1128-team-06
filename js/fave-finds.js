@@ -16,19 +16,23 @@ function toggleRadioButton() {
     clearInterval(intervalId);
   }
 
-  // Start the loop
-startLoop();
 
-const labels = document.querySelectorAll('.tabs__label');
+
+if (window.innerWidth > 768) {
+  // Start the loop
+  startLoop();
+
+  const labels = document.querySelectorAll('.tabs__label');
     labels.forEach(function(label) {
       label.addEventListener('mouseover', pauseLoop);
       label.addEventListener('mouseout', startLoop);
     });
 
-const categoryContent = document.querySelectorAll('.category-content');
+  const categoryContent = document.querySelectorAll('.category-content');
     categoryContent.forEach(function(content) {
       content.addEventListener('mouseover', pauseLoop);
       content.addEventListener('mouseout', startLoop);
     });
+  }
 
 

@@ -77,6 +77,11 @@ align-items: center;
   height: auto;
   padding: 1px;
 }
+
+.five__preview:hover {
+  padding: 0px;
+}
+
 .name_item-container{
   text-align: center;
 }
