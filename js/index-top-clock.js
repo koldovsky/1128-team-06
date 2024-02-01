@@ -1,4 +1,4 @@
-const clockContainer=document.querySelector('.top-collection-clock');
+const clockContainer=document.querySelector('.top-collection__clock');
 function updateClock() {
     clockContainer.innerText=new Date().toLocaleTimeString('uk');
 }
