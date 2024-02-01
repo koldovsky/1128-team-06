@@ -1,4 +1,4 @@
-// тут зробив щоб відкривався і закривався accordion
+// Accordion
 const accordionItems = document.querySelectorAll('.accordion-item')
 
 accordionItems.forEach(item => {
@@ -23,23 +23,7 @@ accordionItems.forEach(item => {
   })
 })
 
-// годинник (демо)
-
-const clockElement = document.getElementById("clock");
-
-  // Оновлення годинника кожну секунду
-  setInterval(() => {
-    const now = new Date();
-    const hours = now.getHours().toString().padStart(2, "0");
-    const minutes = now.getMinutes().toString().padStart(2, "0");
-    const seconds = now.getSeconds().toString().padStart(2, "0");
-
-    const timeString = `${hours}:${minutes}:${seconds}`;
-    clockElement.textContent = timeString;
-  }, 1000);
-
-
-// тут зробив щоб svg повертались на 180 градусів при кліку мишки
+// Here I made svg rotate 180 degrees on mouse click
   const accordionHeaders = document.querySelectorAll(".accordion-header");
 
     accordionHeaders.forEach(header => {
@@ -55,3 +39,19 @@ const clockElement = document.getElementById("clock");
         }
       });
     });
+
+
+// clock
+
+const clockElement = document.getElementById("clock");
+
+  // Refresh your watch every second
+  setInterval(() => {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const seconds = now.getSeconds().toString().padStart(2, "0");
+
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    clockElement.textContent = timeString;
+  }, 1000);
