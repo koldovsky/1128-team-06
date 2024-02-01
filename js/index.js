@@ -3,4 +3,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./fave-finds.js");
   import("./about-us-accordion.js");
   import("./index-top-clock.js");
+  import("./index-top-title.js");
 });
