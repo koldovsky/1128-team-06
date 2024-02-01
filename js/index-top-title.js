@@ -1,6 +1,5 @@
-const indexTopTitle=document.querySelector('.indexTop__title');
-//indexTopTitle.style.color='red';
+const TopCollectionTitle=document.querySelector('.topCollection__title');
 function blinkText() {
-style.classList.toggle('highlight');
+title.classList.toggle('highlight');
 }
 setInterval(blinkText, 1000);

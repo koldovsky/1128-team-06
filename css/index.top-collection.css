@@ -3,7 +3,7 @@ background: url("../img/top-collections.background.webp");
 font-weight: 400px;
 } 
 
-.style {
+.title {
 font-size: 58px;
 font-weight: 700px;
 color: var(--accent-color);
@@ -24,5 +24,6 @@ font-weight: 700px;
 color: var(--text-main-color);
 }
 
-.highlight {color:var(red)
+.highlight {
+color:var(red);
 }
