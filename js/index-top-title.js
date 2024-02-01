@@ -1,5 +1,5 @@
 const TopCollectionTitle=document.querySelector('.topCollection__title');
 function blinkText() {
-title.classList.toggle('highlight');
+title.classList.add('highlight');
 }
-setInterval(blinkText, 1000);
+setInterval(blinkText,1000);
