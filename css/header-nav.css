@@ -17,7 +17,7 @@
   min-height: 100px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .header-nav {
     flex-direction: row;
     justify-content: space-between;
@@ -31,7 +31,7 @@
   z-index: 1;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .header-nav__logo {
     max-width: 90.54px;
   }
@@ -63,7 +63,7 @@
   left: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .header .header-nav__menu {
     position: relative;
     height: 100%;
@@ -96,7 +96,7 @@
   z-index: 1;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .header-nav__menu-button {
     display: none;
   }
