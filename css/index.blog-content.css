@@ -7,8 +7,8 @@
   padding-bottom: 100px;
   background-color: var(--section-color);
   display: flex;
-justify-content: space-between;
-align-items: center
+  justify-content: space-between;
+  align-items: center
 
 }
 .our-blog__text-block {
@@ -40,6 +40,7 @@ align-items: center
   align-items: center;
   border-width: 0,50px; 
   border-style: solid; 
+  border-color: var(--background-color);
   background-color: var(--background-color-second);
   padding-left: 50px;
   padding-right: 50px;
@@ -62,3 +63,10 @@ align-items: center
   width: 45%;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .our-blog__header{
+      flex-direction: column;
+      align-items: center;
+  }
+}
+  

@@ -1,7 +1,6 @@
-
 .about__us{
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   align-items: center;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -15,19 +14,9 @@
 .about__header-title{
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-@media (max-width: 968px) {
-  .about__us {
-      margin-top: 50px;
-      flex-direction: column;
-  }
-}
-@media (max-width: 968px) {
-  .about-us-photo {
-      margin-top: 50px;
-      display: grid;
-  }
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-align: left;
 }
 .about__section-text {
   background-color: var(--background-color);
@@ -79,12 +68,10 @@
   transform: translate(-50%, -50%);
  
 }
-
 .accordion {
   display: flex;
   flex-direction: column;
 }
-
 .accordion-item {
   border: 1px solid var(--background-color);
   margin-bottom: 10px;
@@ -92,7 +79,6 @@
   transition:  0.1s ease-out;
 
 }
-
 .accordion-header {
   background-color: var(--background-color);
   padding: 20px;
@@ -102,7 +88,6 @@
   font-weight: normal;
   color: var(--text-main-color);
 }
-
 .accordion-content {
   display: none;
   padding: 20px;
@@ -110,7 +95,6 @@
   overflow: hidden;
   transition: 0.1s ease-in-out;
 }
-
 .accordion-item.active .accordion-content {
   display: block;
   max-height: 300px;
@@ -123,12 +107,27 @@
 width: 100%;
 border: none;
 height: 1px;
-background-color: rgb(157, 153, 153);
-transition: max-height 0.6s ease-in-out;
+background-color: var(--text-block-color);
+transition: 0.6s ease-in-out;
 margin-bottom: 20px;
 }
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 0 24px;
+}
+.accordion-header svg {
+  margin-left: 10px;
+}
+@media (max-width: 968px) {
+  .about__us {
+      margin-top: 50px;
+      flex-direction: column;
+  }
+}
+@media (max-width: 968px) {
+  .about-us-photo {
+      margin-top: 50px;
+      display: grid;
+  }
 }
