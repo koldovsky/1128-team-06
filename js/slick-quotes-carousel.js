@@ -6,6 +6,20 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 3000,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 840,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 });
 
