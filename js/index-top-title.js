@@ -1,4 +1,4 @@
-const TopCollectionTitle=document.querySelector('.topCollection__title');
+const title=document.querySelector('.title');
 function blinkText() {
 title.classList.toggle('highlight');
 }
