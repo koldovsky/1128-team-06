@@ -89,3 +89,49 @@
     border-radius: 50%;
     border: none;
 }
+
+.slick-dots  button:hover {
+    background-color: #2b292b
+}
+
+.slick-dots .slick-active button {
+    background-color: #646364
+}
+
+.container {
+    position: relative;
+}
+
+.container .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    margin-top: -25px;
+}
+
+.slick-prev {
+    left: 0;
+    font-size: 0;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background: none;
+    background-image: url('../img/customer-quotes-carousel/icons8-arrow-30.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slick-next {
+    right: 0;
+    font-size: 0;
+    border: none;
+    height: 32px;
+    width: 32px;
+    background: none;
+    background-image: url('../img/customer-quotes-carousel/icons8-arrow-30.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+}

@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function() {
   $('.carousel-quotes__items').slick({
     infinite: false,
     slidesToShow: 3,
@@ -8,3 +8,4 @@ $(document).ready(function () {
     dots: true,
   });
 });
+
