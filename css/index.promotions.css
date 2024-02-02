@@ -28,6 +28,11 @@
     color: var(--text-main-color);
 }
 
+.promotions__item-learn-container {
+    display: flex;
+    align-items: center;
+}
+
 .promotions__item-learn {
     font-size: 12px;
     text-decoration: underline;

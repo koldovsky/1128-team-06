@@ -27,14 +27,12 @@
 
 }
 
-.contact-us__form-button {
-    background-color: var(--accent-color);
-    border: 0;
-    color: #fff;
-    border-radius: 5px;
+.contact-us .button {
+    width: 100%;
     margin: 12px 0px 0px;
     padding: 20px 30px;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .contact-us__contact-info {

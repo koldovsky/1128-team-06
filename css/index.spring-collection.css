@@ -1,46 +1,42 @@
 .spring-collection-box{
     width: 100%;
-    float: left;
-    margin-top: 50px;
-    min-height: 600px;
-    background-image: url(../img/background_main.webp);
+    min-height: 95vh;
+    background-image: url("../img/background_main.webp");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spring-collection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
 }
 
 .spring-collection-box__title{
-    font-size: 70px;
+    font-size: 84px;
+    line-height: 92.4px;
     font-weight: bold;
-    width: 40%;
-    margin-left: 10%;
-}
-.spring-collection-box__title-green{
-    color: var(--accent-color);
-}
-.spring-collection-box__text{
     width: 50%;
-    margin-left: 10%;
-}
-.spring-collection-box__button{
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    background-color: var(--accent-color);
-    color: var(--section-color);
-    font-weight: bold;
-    margin-left: 10%;
+    color: var(--text-main-color);
 }
 
-.spring-collection-box__button:hover{
-    background-color: var(--text-main-color);
-    transition: background-color 1s ease;
+.spring-collection-box__text{
+    width: 50%;
+    color: var(--text-main-color);
+}
+
+.spring-collection-box .button-secondary{
+    width: 154.18px;
+    height: 52px;
 }
 
 .decision{
     width: 100%;
-    float: left;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -50,8 +46,7 @@
 .decision__block-white{
     width: 600px;
     height: 400px;
-    float: left;
-    background-image: url(../img/decision_img_white.webp);
+    background-image: url("../img/decision_img_white.webp");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -87,7 +82,7 @@
     width: 600px;
     height: 400px;
     float: left;
-    background-image: url(../img/decision_img_black.webp);
+    background-image: url("../img/decision_img_black.webp");
     background-size: cover;
 }
 .decision__text-up-black{
@@ -103,17 +98,9 @@
     color: var(--section-color);
     margin-top: 5%
 }
-.decision__block-black-button{
+
+.decision .button {
     width: 130px;
     height: 43px;
-    border-radius: 5px;
-    background-color: var(--accent-color);
-    color: var(--section-color);
-    font-weight: bold;
     margin-top: 5%
-}
-.decision__block-black-button:hover{
-    background-color: var(--section-color);
-    color: var(--text-main-color);
-    transition: background-color 1s ease;
 }
