@@ -31,5 +31,5 @@
 .top-collection__clock {
   font-size: 2em;
   color: blue;
-  margin-right: 20px; /* Задайте відстань від правого краю */
+  margin-right: 100px; /* Задайте відстань від правого краю */
 }
