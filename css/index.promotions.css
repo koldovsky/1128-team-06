@@ -21,11 +21,8 @@
 }
 
 .promotions__item-img {
-  height: 250px;
-  width: 380px;
-  font-weight: 250px;
   background-position: center;
-}
+  }
 
 .promotions__item-text {
   font-weight: 500px;
@@ -42,14 +39,60 @@
   text-decoration: underline;
 }
 
-/* Для малих екранів (мобільні пристрої) */
-@media (max-width: 600px) {
+
+/* Стилі для зображень у елементах для менших екранів */
+@media (max-width: 767px) {
+  .promotions__item-img {
+    height: 150px;
+    width: 280px;
+  }
 }
 
-/* Для середніх екранів (планшети) */
-@media (min-width: 601px) and (max-width: 1024px) {
+/* Стилі для зображень у елементах для середніх екранів */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .promotions__item-img {
+    height: 200px;
+    width: 330px;
+  }
 }
 
-/* Для великих екранів (настільні комп'ютери) */
-@media (min-width: 1025px) {
+/* Стилі для зображень у елементах для великих екранів */
+@media (min-width: 1024px) {
+  .promotions__item-img {
+    height: 250px;
+    width: 380px;
+  }
 }
+
+/* Загальні стилі для тексту у елементах */
+.promotions__item-text {
+  font-weight: 500;
+  color: var(--text-main-color);
+}
+
+/* Стилі для тексту у елементах для менших екранів */
+@media (max-width: 767px) {
+  .promotions__item-text {
+    font-size: 14px;
+  }
+}
+
+/* Стилі для тексту у елементах для великих екранів */
+@media (min-width: 1024px) {
+  .promotions__item-text {
+    font-size: 18px;
+  }
+}
+
+/* Стилі для контейнера з посиланням "Дізнатися більше" */
+.promotions__item-learn-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Стилі для тексту посилання "Дізнатися більше" */
+.promotions__item-learn {
+  font-size: 12px;
+  text-decoration: underline;
+}
+
