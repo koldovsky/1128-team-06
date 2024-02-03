@@ -1,51 +1,55 @@
 .promotions {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+  background-color: var(--section-color);
+}
+
+.promotions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .promotions__img-container {
-    width: 300px;
+  width: 300px;
 }
 
 .promotions__item {
-    display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 5%;
-    padding-top: 5%;
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 .promotions__item-img {
-    height: 250px;
-    width: 380px;
-    font-weight: 250px;
-    background-position: center;
-    }
+  height: 250px;
+  width: 380px;
+  font-weight: 250px;
+  background-position: center;
+}
 
 .promotions__item-text {
-    font-weight: 500px;
-    color: var(--text-main-color);
+  font-weight: 500px;
+  color: var(--text-main-color);
 }
 
 .promotions__item-learn-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .promotions__item-learn {
-    font-size: 12px;
-    text-decoration: underline;
+  font-size: 12px;
+  text-decoration: underline;
 }
 
 /* Для малих екранів (мобільні пристрої) */
-@media only screen and (max-width: 600px) {
-   }
+@media (max-width: 600px) {
+}
 
 /* Для середніх екранів (планшети) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    }
+@media (min-width: 601px) and (max-width: 1024px) {
+}
 
 /* Для великих екранів (настільні комп'ютери) */
-@media only screen and (min-width: 1025px) {
-    }
+@media (min-width: 1025px) {
+}
