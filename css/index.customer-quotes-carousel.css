@@ -1,60 +1,65 @@
 .carousel-quotes {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 70px 0px 70px 0px;
 }
 
 .carousel-quotes__title {
     text-align: center;
     color: var(--text-main-color);
     font-size: 38px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .carousel-quotes__subtitle {
     text-align: center;
     color: var(--text-main-color);
     font-size: 18px;
-    margin-top: 25px;
-    margin-bottom: 35px;
+    margin: 25px 0px 35px 0px;
 }
 
 .carousel-quotes__item {
-    padding: 0px 15px;
-    margin: 15px;
     background-color: var(--section-color);
+    padding: 0px 35px 45px 35px;
+    margin: 15px;
 }
 
 .carousel-quotes__item-name {
     font-size: 22px;
     color: var(--text-main-color);
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .carousel-quotes__item-city {
     font-size: 14px;
-    color: var(--text-main-color);
-    margin-top: 10px;
+    color: #2c2c2c;
+    margin-top: 15px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: calc(0.064 * 1em);
 }
 
 .carousel-quotes__item-text {
-    margin-top: 25px;
     font-size: 16px;
     color: var(--text-light-color);
+    margin-top: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: calc(0.05 * 1em);
 }
 
 .carousel-quotes__item-date {
     font-size: 14px;
-    color: var(--text-main-color);
-    margin-top: 15px;
-    padding-bottom: 20px;
+    color: #2c2c2c;
+    margin-top: 25px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: calc(0.064 * 1em);
 }
 
 .carousel-quotes__item-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin: 50px 0px 15px 0px;
     object-fit: cover;
 }
 
@@ -113,7 +118,7 @@
     height: 32px;
     width: 32px;
     background: none;
-    background-image: url('../img/customer-quotes-carousel/icons8-arrow-30.png');
+    background-image: url('../img/customer-quotes-carousel/arrow-for-carousel.svg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
@@ -126,7 +131,7 @@
     height: 32px;
     width: 32px;
     background: none;
-    background-image: url('../img/customer-quotes-carousel/icons8-arrow-30.png');
+    background-image: url('../img/customer-quotes-carousel/arrow-for-carousel.svg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
