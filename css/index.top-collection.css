@@ -18,12 +18,12 @@
 }
 
 .top-collection__title {
-  font-size: 84px;
+  font-size: 58px;
   font-weight: 700;
   color: var(--text-main-color);
   text-align: center; /* Вирівнюємо текст по центру */
   line-height: 63.8px;  /* Висота рядку тексту. Для кожної шири екрану може бути різна. Треба дивитися через F12 на вебліумі */
-  overflow-wrap: break-word; /* Якщо слово не влазить у рядок, нехац "розламується" на частини*/
+  /*overflow-wrap: break-word; /* Якщо слово не влазить у рядок, нехац "розламується" на частини*/
 }
 
  /* media звпит для широких десктопних екранів */
