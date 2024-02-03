@@ -39,6 +39,12 @@
   text-decoration: underline;
 }
 
+@media (max-width: 767px) {
+  .promotions-container {
+    display: block; /* Змінено на block для створення стовпчика на мобільних екранах */
+  }
+}
+
 
 /* Стилі для зображень у елементах для менших екранів */
 @media (max-width: 767px) {
