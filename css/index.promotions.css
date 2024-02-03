@@ -84,15 +84,4 @@
   }
 }
 
-/* Стилі для контейнера з посиланням "Дізнатися більше" */
-.promotions__item-learn-container {
-  display: flex;
-  align-items: center;
-}
-
-/* Стилі для тексту посилання "Дізнатися більше" */
-.promotions__item-learn {
-  font-size: 12px;
-  text-decoration: underline;
-}
 
