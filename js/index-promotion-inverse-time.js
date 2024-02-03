@@ -1,4 +1,4 @@
-const clockContainer = document.querySelector('.top-collection__inverseclock');
+const clockContainer = document.querySelector('.top-collection__inverse-clock');
 const endOfSaleDate = new Date('2024-02-29T23:59:59'); // Замініть це значення на дату завершення розпродажу
 
 function calculateTimeRemaining() {

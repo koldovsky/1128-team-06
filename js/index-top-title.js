@@ -1,5 +1,5 @@
-const title=document.querySelector('.title');
+const title = document.querySelector(".title");
 function blinkText() {
-title.classList.toggle('highlight');
+  title.classList.toggle("highlighted-text");
 }
-setInterval(blinkText,1000);
+setInterval(blinkText, 1000);
