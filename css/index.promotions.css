@@ -21,8 +21,7 @@
     width: 380px;
     font-weight: 250px;
     background-position: center;
-    max-width: 100%;
-     }
+    }
 
 .promotions__item-text {
     font-weight: 500px;
@@ -41,15 +40,12 @@
 
 /* Для малих екранів (мобільні пристрої) */
 @media only screen and (max-width: 600px) {
-    /* Ваші стилі для малих екранів тут */
-}
+   }
 
 /* Для середніх екранів (планшети) */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Ваші стилі для середніх екранів тут */
-}
+    }
 
 /* Для великих екранів (настільні комп'ютери) */
 @media only screen and (min-width: 1025px) {
-    /* Ваші стилі для великих екранів тут */
-}
+    }
