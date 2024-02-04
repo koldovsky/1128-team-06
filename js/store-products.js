@@ -56,20 +56,21 @@ function renderProducts(productsOnPage) {
   let productsDomString = "";
 
   for (const product of productsOnPage) {
-    productsDomString += `<div class="products-container__product">
-      <a href="item-page.html" class="product__item" data-id=${product.productCode}>
+    productsDomString += 
+    `<div
+      class="products-container__product ${product.availability === 'Out of stock' ? 'unavailable' : ''}"
+    >
+      <a href="item-page.html" class="product__item" data-id="${product.productCode}">
         <div class="product__item--image-container">
-          <img
-            src="${product.img}"
-            alt="${product.name + " photo"}"
-          />
+          <img src="${product.img}" alt="${product.name + " photo"}" />
+          <div class="out-of-stock">Out of stock</div>
         </div>
         <p class="product__item-name">${product.name}</p>
       </a>
-      <p class="product__price">${(product.price * rate)
-        .toFixed(2)
-        .toString()
-        .replace(".", ",")} ${currencyTo}</p>
+      <p class="product__price">
+        ${(product.price * rate) .toFixed(2) .toString() .replace(".", ",")}
+        ${currencyTo}
+      </p>
       <button class="button button-secondary">BUY</button>
     </div>`;
   }

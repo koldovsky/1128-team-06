@@ -17,6 +17,8 @@
   --text-block-color: grey;
   --input-light-color: #c5cbd6;
   --our-blog-color: #707070;
+  --out-of-stock-background: #FFDDD9;
+  --out-of-stock-text: #CC3833;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
