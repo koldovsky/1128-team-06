@@ -1,5 +1,6 @@
 const response = await fetch("api/products.json");
 const productsList = await response.json();
+const productsInListOrder = { 'in stock': 1, 'out of stock': 2};
 
 let currentPage = 1;
 const selectElement = document.querySelector("#products-per-page__select");
@@ -34,9 +35,21 @@ document.querySelector("#products-per-page__select").addEventListener("change", 
 function displayProducts() {
   const startIndex = productsPerPage * (currentPage - 1);
   const endIndex = startIndex + productsPerPage;
+  productsList.sort(function (a, b) {
+    if (a["availability"] !== b["availability"]) {
+      return productsInListOrder[a.availability] - productsInListOrder[b.availability];
+    } else {
+      return a["name"].localeCompare(b["name"])
+    }
+  });
   const productsOnPage = productsList.slice(startIndex, endIndex);
 
   renderProducts(productsOnPage);
+}
+
+function productInfoClick(productCode) {
+  const product = productsList.filter(prod => prod.productCode === productCode)[0];
+  localStorage.product = JSON.stringify(product);
 }
 
 function renderProducts(productsOnPage) {
@@ -44,7 +57,7 @@ function renderProducts(productsOnPage) {
 
   for (const product of productsOnPage) {
     productsDomString += `<div class="products-container__product">
-      <a href="item-page.html" class="product__item">
+      <a href="item-page.html" class="product__item" data-id=${product.productCode}>
         <div class="product__item--image-container">
           <img
             src="${product.img}"
@@ -60,7 +73,9 @@ function renderProducts(productsOnPage) {
       <button class="button button-secondary">BUY</button>
     </div>`;
   }
+  
   document.querySelector(".products-container").innerHTML = productsDomString;
+  document.querySelectorAll(".product__item").forEach(link => link.addEventListener("click", () => productInfoClick(link.dataset.id)));
 }
 
 function displayPagination() {

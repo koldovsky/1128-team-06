@@ -2,86 +2,171 @@
   {
     "img": "img/products/minimal-3-piece.png",
     "name": "3-piece Minimal, ARM",
-    "price": 110.00
+    "price": 110.00,
+    "productCode": "5",
+    "description": "This 3-piece white lamp is a perfect fit for a kitchen or living room. It is a versatile lamp that looks good in any interior.",
+    "materials": "painted steel",
+    "dimensions": "",
+    "availability": "in stock"
   },
   {
     "img": "img/products/arona-armchair.png",
     "name": "Arona armchair, Hunderbolt studio",
-    "price": 150.00
+    "price": 150.00,
+    "productCode": "13",
+    "description": "A cozy armchair in a bright yellow color is perfect for both your living room and your home office. A distinctive feature of this chair is a high back with decorative buttons.",
+    "materials": "Faux leather, wood",
+    "dimensions": "30\" x 37\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/aurora-armchair.png",
     "name": "Aurora armchair, MDS",
-    "price": 210.00
+    "price": 210.00,
+    "productCode": "2",
+    "description": "This wide-backed trapezoidal chair will welcome you after or during your hard day and help you relax. It will fit into any interior and is very easy to clean.",
+    "materials": "Faux suede, wood",
+    "dimensions": "28\" x 37\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/barr-armchair.png",
     "name": "Barr armchair, DoDo Design Bureau",
-    "price": 510.00
+    "price": 510.00,
+    "productCode": "16",
+    "description": "This designer armchair is made from a combination of textiles and natural wood. The ribbed elastic surface provides maximum comfort. The armchair fits perfectly into a high-tech or minimalist living room.",
+    "materials": "Textile, black walnut wood",
+    "dimensions": "26\" x 33\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/bubbles.png",
     "name": "Bubbles Udion",
-    "price": 410.00
+    "price": 410.00,
+    "productCode": "8",
+    "description": "This elegant luminaire emits diffused warm light. Consists of three pendant lamps on gold-colored mountings, the height is adjustable.",
+    "materials": "steel",
+    "dimensions": "",
+    "availability": "in stock"
   },
   {
     "img": "img/products/cloud-armchair.png",
     "name": "Cloud armchair, DIX",
-    "price": 150.00
+    "price": 150.00,
+    "productCode": "3",
+    "description": "Simple design and vibrant turquoise color are the hallmarks of this armchair. It is versatile: you can make this armchair a striking accent in your interior or create an island of tranquility in your office.",
+    "materials": "Faux suede, wood",
+    "dimensions": "28\" x 35\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/delar.png",
     "name": "Delar, Uni Studio",
-    "price": 350.00
+    "price": 350.00,
+    "productCode": "7",
+    "description": "This unusual lamp will become a real boon for your interior! It consists of two pineapple-shaped perforated lamps. The height of the pendant lights is adjustable.",
+    "materials": "steel",
+    "dimensions": "",
+    "availability": "in stock"
   },
   {
     "img": "img/products/fusion-armchair.png",
     "name": "Fusion armchair, LEXX",
-    "price": 320.00
+    "price": 320.00,
+    "productCode": "1",
+    "description": "It is an incredibly stylish armchair in a trendy mustard color. In it, you can recline comfortably and read a book or work on a laptop.",
+    "materials": "Faux suede, steel",
+    "dimensions": "25\" x 32\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/hugo-table.png",
     "name": "Hugo table, KUKO studio",
-    "price": 99.00
+    "price": 99.00,
+    "productCode": "12",
+    "description": "Stylish side table from one of the best design studios. Functional and minimalistic, it fits perfectly into any interior.",
+    "materials": "Plastic, steel",
+    "dimensions": "18\" x 25\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/lord-armchair.png",
     "name": "Lord armchair, Miedel Home",
-    "price": 120.00
+    "price": 120.00,
+    "productCode": "14",
+    "description": "Do you want to feel comfortable and hide from the bad weather? This armchair is perfect for relaxing with a book or a cup of tea. It also provides extra back support.",
+    "materials": "Faux suede, wood",
+    "dimensions": "28\" x 38\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/monica-table.png",
     "name": "Monica table, Orro",
-    "price": 110.00
+    "price": 110.00,
+    "productCode": "10",
+    "description": "This stylish small golden table will perfectly fit into your interior. Thanks to the high sides, no objects will slide off this table.",
+    "materials": "Steel",
+    "dimensions": "18\" x 20\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/red-drops.png",
     "name": "Red Drops, KUKO",
-    "price": 210.00
+    "price": 210.00,
+    "productCode": "6",
+    "description": "Do you want to fill the room with muted red light? This lamp from one of the best design studios is perfect for you then. The pendant lamp consists of two glass lamps on cords, the height is adjustable.",
+    "materials": "steel and glass",
+    "dimensions": "",
+    "availability": "in stock"
   },
   {
     "img": "img/products/snitch-cabinet.png",
     "name": "Snitch cabinet, ARM",
-    "price": 100.00
+    "price": 100.00,
+    "productCode": "11",
+    "description": "A small and neat walnut colored bedside cabinet is made of natural wood. It fits perfectly in any bedroom. There are two shelves inside.",
+    "materials": "Walnut wood",
+    "dimensions": "16\" x 19\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/ultimate-green-chair.png",
     "name": "Ultimate Green chair, XODO",
-    "price": 90.00
+    "price": 90.00,
+    "productCode": "15",
+    "description": "Simple yet functional, this chair is perfect for your minimalistic dining room. It will become a bright spot in your interior design and will awaken your appetite.",
+    "materials": "Plastic",
+    "dimensions": "21\" x 32\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/upi-table.png",
     "name": "Upi table, Landstorm",
-    "price": 90.00
+    "price": 90.00,
+    "productCode": "9",
+    "description": "This ultimate white coffee table will fit perfectly into your living room or office. The glossy surface is easy to wipe off.",
+    "materials": "Plastic",
+    "dimensions": "10\" x 8\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/valetta-armchair.png",
     "name": "Valetta armchair, ZIX studio",
-    "price": 310.00
+    "price": 310.00,
+    "productCode": "17",
+    "description": "An armchair in which you will feel what real comfort is. The original design will suit both the bedroom and the living room, or even a home office. Available only in pink.",
+    "materials": "Faux suede, steel",
+    "dimensions": "28\" x 35\"",
+    "availability": "in stock"
   },
   {
     "img": "img/products/jeanie-armchair.png",
     "name": "Jeanine armchair, KUKO",
-    "price": 210.00
+    "price": 210.00,
+    "productCode": "4",
+    "description": "This is the very armchair in which you want to drown after a hard day. Wide handrails and padded back allow you to take any position in this armchair.",
+    "materials": "Textile, wood",
+    "dimensions": "28\" x 35\"",
+    "availability": "out of stock"
   }
 ]
