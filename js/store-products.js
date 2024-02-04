@@ -1,6 +1,6 @@
 const response = await fetch("api/products.json");
 const productsList = await response.json();
-const productsInListOrder = { 'in stock': 1, 'out of stock': 2};
+const productsInListOrder = { 'In stock': 1, 'Out of stock': 2};
 
 let currentPage = 1;
 const selectElement = document.querySelector("#products-per-page__select");
