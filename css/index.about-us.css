@@ -54,6 +54,7 @@
   bottom: 0;
   left: 0;
   align-items: center;
+  transition: transform 0.4s ease-in-out;
 }
 .icon-panel {
   width: 50px;
@@ -69,13 +70,11 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  transition: all;
 }
 .accordion {
   display: flex;
   flex-direction: column;
 }
-
 .accordion-header {
   background-color: var(--background-color);
   padding: 20px;
@@ -86,13 +85,11 @@
   color: var(--text-main-color);
   display: flex;
   justify-content: space-between;
-  
 }
 .accordion-item {
   border: 1px solid var(--background-color);
   margin-bottom: 10px;
   overflow: hidden;
-
 }
 .accordion-content {
   display: none;
@@ -130,7 +127,6 @@ margin-bottom: 20px;
   }
   
 }
-
 
 
 
