@@ -47,6 +47,12 @@ function resetSvgRotation(item) {
   }
 }
 
+//scroll
+const clock = document.getElementById("clock");
+clock.addEventListener("click", function() {
+  // Прокручується сторінку на самий верх
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 
 // clock

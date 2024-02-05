@@ -90,6 +90,7 @@
    font-weight: bold;
    width: 45%;
    text-align: center;
+   cursor: pointer;
  }
 
  .grid-item > * {
