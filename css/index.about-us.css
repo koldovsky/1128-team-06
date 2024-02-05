@@ -12,18 +12,22 @@
   padding-right: 40px;
   display: flex;
 }
+
 .about__header-title{
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   text-align: left;
+  color: var(--our-blog-color);
 }
+
 .about__section-text {
   background-color: var(--background-color);
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .about__text {
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
@@ -31,15 +35,31 @@
   text-align: center;
   display: flex;
 }
+
 .svg-foto{
   width: 30px;
   height: 30px;
   cursor: pointer;
   transition: fill 0.5s ease; 
 }
+
 .svg-foto:hover {
   fill: var( --accent-color); 
+  animation: shakeAnimation 0.5s infinite;
 }
+
+@keyframes shakeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 #background {
   transition: fill 0.3s ease, transform 0.3s ease; 
   cursor: pointer;  
@@ -49,7 +69,6 @@
   fill: var(--background-color); 
   border-radius: 45;
 }
-
 
 .about-us-photo .image-container {
   display: flex;
@@ -72,12 +91,14 @@
   align-items: center;
   transition:  0.4s ease-in-out;
 }
+
 .icon-panel {
   width: 50px;
   height: 50px; 
   border-radius: 50%; 
   overflow: hidden; 
 }
+
 .about-us-photo .icon-panel{
   width: 100%;
   height: 40%;
@@ -87,10 +108,12 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
 .accordion {
   display: flex;
   flex-direction: column;
 }
+
 .accordion-header {
   background-color: var(--background-color);
   padding: 20px;
@@ -103,34 +126,40 @@
   cursor: pointer;
   justify-content: space-between;
 }
+
 .accordion-item {
   border: 1px solid var(--background-color);
   margin-bottom: 10px;
   overflow: hidden;
 }
+
 .accordion-content {
   display: none;
   padding: 20px;
   max-height: 0;
   overflow: hidden;
-  transition: 0.4s ease-in;
+  transition: 0.4s ease-in-out;
 }
+
 .accordion-item.active .accordion-content {
   display: block;
   max-height: 300px;
 }
+
 .accordion-wrapper {
   max-width: 600px; 
   margin: 0 auto; 
 }
+
 .custom-line {
 width: 100%;
 height: 1px;
 background: var(--line-color);
-transition: 0.3s ease-in-out;
+transition: 0.4s ease-in;
 margin-bottom: 20px;
 }
 
+ /*media*/
 
 @media (max-width: 1090px) {
   .about__us {
@@ -167,7 +196,7 @@ margin-bottom: 20px;
   width: 100%;
   height: 100%;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 50px;      
   top: 0px;
   right: 0px;
   bottom: 0;
