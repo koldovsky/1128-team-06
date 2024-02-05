@@ -44,8 +44,7 @@
     margin-top: 70px;
 }
 .decision__block-white{
-    width: 600px;
-    height: 400px;
+    width: 40%;
     background-image: url("../img/decision_img_white.webp");
     background-size: cover; 
     background-position: center; 
@@ -79,8 +78,7 @@
 }
 
 .decision__block-black{
-    width: 600px;
-    height: 400px;
+    width: 40%;
     float: left;
     background-image: url("../img/decision_img_black.webp");
     background-size: cover;
