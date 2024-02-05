@@ -1,7 +1,4 @@
 .bestsellers {
-    width: 1268px;
-    height: 842px;
-    /* background-size: cover; */
     background-color: var(--background-color);
 }
 .bestsellers__header {

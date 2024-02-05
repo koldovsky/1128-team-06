@@ -100,11 +100,13 @@
     background-color: #646364
 }
 
-.container {
+.carousel-quotes__container {
     position: relative;
+    margin: 0% 12% 0% 12%;
+    padding: 0% 2% 0% 2%;
 }
 
-.container .slick-arrow {
+.carousel-quotes__container .slick-arrow {
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -122,6 +124,7 @@
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+    transition: 0.5s ease;
 }
 
 .slick-next {
@@ -136,4 +139,27 @@
     background-position: center;
     background-repeat: no-repeat;
     transform: scaleX(-1);
+    transition: 0.5s ease;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-image: url('../img/customer-quotes-carousel/hover-arrow-for-carousel.svg');
+    transition: 0.5s ease;
+}
+
+@media (max-width: 1192px) {
+    .carousel-quotes__container {
+        margin: 0% 5% 0% 5%;
+    }
+    
+    .slick-prev, .slick-next {
+        border-radius: 50%;
+        background-color: #2b292b;
+        height: 25px;
+        width: 25px;
+    }
+
+    .slick-prev:hover, .slick-next:hover {
+        background-color: black;
+    }
 }
