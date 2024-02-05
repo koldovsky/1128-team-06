@@ -34,7 +34,23 @@
 .svg-foto{
   width: 30px;
   height: 30px;
+  cursor: pointer;
+  transition: fill 0.5s ease; 
 }
+.svg-foto:hover {
+  fill: var( --accent-color); 
+}
+#background {
+  transition: fill 0.3s ease, transform 0.3s ease; 
+  cursor: pointer;  
+}
+
+#background:hover {
+  fill: var(--background-color); 
+  border-radius: 45;
+}
+
+
 .about-us-photo .image-container {
   display: flex;
   justify-content: center;
