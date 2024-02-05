@@ -97,6 +97,8 @@
   height: 50px; 
   border-radius: 50%; 
   overflow: hidden; 
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .about-us-photo .icon-panel{
@@ -169,12 +171,14 @@ margin-bottom: 20px;
       padding-right: 25px;
   }
 }
-@media (max-width: 368px) {
+
+@media (max-width: 468px) {
   .accordion-header  {
       flex-direction: column;
+      align-items: flex-end;
   }
-  
 }
+
 @media (max-width: 1408px) {
   .about-us-photo img  {
       width: 126%;
