@@ -107,7 +107,7 @@ body {
 
 .out-of-stock {
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   bottom: 0;
   background-color: var(--out-of-stock-background);
   width: 100%;

@@ -15,7 +15,6 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100px;
-  z-index: 1;
 }
 
 @media (min-width: 992px) {
@@ -29,7 +28,7 @@
 
 .header-nav__logo {
   max-width: 108px;
-  z-index: 1;
+  z-index: 999;
 }
 
 @media (min-width: 992px) {
@@ -58,6 +57,7 @@
   transition: left 0.5s ease;
   font-size: 16px;
   background: var(--text-tertiary-сolor);
+  z-index: 998;
 } 
 
 .header.responsive .header-nav__menu{
@@ -94,7 +94,7 @@
   cursor: pointer;
   min-height: 30px;
   min-width: 30px;
-  z-index: 1;
+  z-index: 999;
 }
 
 @media (min-width: 992px) {
