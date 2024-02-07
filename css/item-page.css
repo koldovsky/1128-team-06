@@ -4,27 +4,83 @@
 @import "footer.css";
 .item__link {
   color: var(--text-main-color);
+  padding-left: 15px;
+  position: absolute;
+  top: 140px;
+  left: 40px;
 }
 .item__content {
   column-count: 2;
-  column-width: 353px;
+  column-width: 324px;
+}
+.item-page__photos {
+  break-inside: avoid;
+  margin-top: 45px;
+  padding: 0 15px;
+  justify-content: center;
+  display: grid;
+}
+.item__photo {
+  max-width: 328px;
+  margin-bottom: 16px;
+}
+.item__minor-photo-grid {
+  justify-self: center;
 }
 .item__stock {
   color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
 }
 .item__name {
   color: var(--text-main-color);
+  font-size: 22px;
+  font-weight: 500;
 }
 .item__code {
   color: var(--text-main-color);
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
 }
 .item__price {
   color: var(--text-main-color);
+  margin: 24px 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
 }
 .item__upper-line {
-    margin: 24px 0;
-    color: var(--text-block-color);
-  }
+  margin: 24px 0;
+  color: var(--text-block-color);
+}
+.item__choose-item{
+  box-sizing: border-box;
+  width: 100%;
+}
+.item__description-block .button-secondary {
+  height: 48px;
+  border: 1.6;
+  border-radius: 8px;
+  /* position: absolute;
+  right: 50px;
+  box-sizing: border-box;
+  width: 35%; */
+}
+.item__quantity {
+  padding: 8px 12px;
+  margin-right: 16px;
+  border: 0.8px solid var(--text-block-color);
+  border-radius: 4px;
+  width: 58px;
+  height: 44px;
+}
+.item__description-block {
+  width: 600px;
+  break-inside: avoid;
+}
 .item__description {
   text-transform: uppercase;
   color: var(--text-main-color);
@@ -33,42 +89,40 @@
 .item__description-text {
   color: var(--text-main-color);
 }
-.item__description-text {color: var(--text-main-color)
+.item__properties {
+  color: var(--text-light-color);
 }
-.item__properties {color: var(--text-light-color)
+.item__dimensions {
+  color: var(--text-light-color);
 }
-.item__dimensions {color: var(--text-light-color)
-}
-.item__materials {color: var(--text-light-color)
+.item__materials {
+  color: var(--text-light-color);
 }
 @media (min-width: 320px) {
   .item-page__container {
     padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .item__content {
-    padding: 0 24px;
-  }
-  .item-page__photos {
-    margin-top: 45px;
-    padding: 0 15px;
-  }
-  .item__photo {
-    margin-bottom: 16px;
+    padding: 0 14px;
   }
   .item__minor-photo-grid {
     margin: -6px;
-    width: 272px;
-    height: 264;
+    min-width: 272px;
+    min-height: 264;
   }
   .item__minor-photo {
     margin: 6px;
-    width: 35px;
-    height: 40px;
+    max-width: 44px;
+    min-height: 49px;
     display: inline-flex;
   }
   .item__description-block {
     margin-top: 50px;
     padding: 0 15px;
+    width: auto;
   }
   .item__stock {
     color: var(--accent-color);
@@ -86,7 +140,6 @@
     font-weight: 600;
   }
   .item__description-block .button-secondary {
-    width: 484px;
     height: 48px;
     border: 1.6;
     border-radius: 8px;
@@ -96,11 +149,6 @@
   }
   .item__description-text {
     color: var(--text-main-color);
-  }
-  .item__stock {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.8px;
   }
   .item__name {
     font-size: 22px;
@@ -118,28 +166,20 @@
     font-weight: 600;
     letter-spacing: 0.9px;
   }
-  
-  .item__quantity{
-    padding: 8px 12px;
-    margin-right: 16px;
-    border: 0.8px;
-    border-color: var(--text-block-color);
-    width: 36px;
-    height: 34px;
-  }
+
   .item__description-block .button-secondary {
     border: 1.6px;
-    width: 258px;
-    height: 48;
+    /* width: 168px;
+    height: 48; */
   }
-  .item__choose-item{
+  .item__choose-item {
     display: inline-flex;
     align-items: center;
   }
-  .item__description-outer-wrapper{
+  .item__description-outer-wrapper {
     margin-top: 24px;
   }
-  .item__lower-line{
+  .item__lower-line {
     margin-bottom: 16px;
   }
 
@@ -149,45 +189,12 @@
     letter-spacing: 0.8px;
     color: var(--text-light-color);
   }
-  .item__materials {padding-bottom: 90px;
+  .item__materials {
+    padding-bottom: 90px;
   }
 }
-@media (min-width: 768px){
-
+@media (min-width: 768px) {
+  .item__content {
+    padding: 0 32px;
+  }
 }
-
-/* 
-.item-page__container {
-}
-
-
-.item__photo {
-}
-.item__minor-photo-grid {
-}
-.item__minor-photo {
-}
-.item__description-block {
-}
-.item__stock {
-}
-.item__name {
-}
-.item__code {
-}
-.item__price {
-}
-.button {
-}
-.button-secondary {
-}
-.item__description {
-}
-.item__description-text {
-}
-.item__properties {
-}
-.item__dimensions {
-}
-.item__materials {
-} */
