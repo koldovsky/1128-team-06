@@ -1,93 +1,62 @@
 .promotions {
   background-color: var(--section-color);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+@media (min-width: 768px) {
+  .promotions {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
 }
 
 .promotions-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
-.promotions__img-container {
-  width: 300px;
+@media (min-width: 768px) {
+  .promotions-container {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .promotions__item {
-  display: block;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-bottom: 5%;
-  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.promotions__img-container {
+  width: 100%;
+  aspect-ratio: 1.468 / 1;
 }
 
 .promotions__item-img {
-  background-position: center;
-  }
+  width: 100%;
+  aspect-ratio: 1.468 / 1;
+  object-fit: cover;
+}
 
 .promotions__item-text {
-  font-weight: 500px;
+  font-weight: 500;
+  font-size: 22px;
   color: var(--text-main-color);
+  margin-top: 15px;
 }
 
 .promotions__item-learn-container {
   display: flex;
   align-items: center;
+  margin-top: 20px;
 }
 
 .promotions__item-learn {
   font-size: 12px;
-  text-decoration: underline;
+  font-weight: 700;
 }
-
-@media (max-width: 767px) {
-  .promotions-container {
-    display: block; /* Змінено на block для створення стовпчика на мобільних екранах */
-  }
-}
-
-
-/* Стилі для зображень у елементах для менших екранів */
-@media (max-width: 767px) {
-  .promotions__item-img {
-    height: 150px;
-    width: 280px;
-  }
-}
-
-/* Стилі для зображень у елементах для середніх екранів */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .promotions__item-img {
-    height: 200px;
-    width: 330px;
-  }
-}
-
-/* Стилі для зображень у елементах для великих екранів */
-@media (min-width: 1024px) {
-  .promotions__item-img {
-    height: 250px;
-    width: 380px;
-  }
-}
-
-/* Загальні стилі для тексту у елементах */
-.promotions__item-text {
-  font-weight: 500;
-  color: var(--text-main-color);
-}
-
-/* Стилі для тексту у елементах для менших екранів */
-@media (max-width: 767px) {
-  .promotions__item-text {
-    font-size: 14px;
-  }
-}
-
-/* Стилі для тексту у елементах для великих екранів */
-@media (min-width: 1024px) {
-  .promotions__item-text {
-    font-size: 18px;
-  }
-}
-
-
