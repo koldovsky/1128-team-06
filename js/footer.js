@@ -1,16 +1,13 @@
-const footerPopup = document.querySelector('.footer__popup');
-const footerModal = document.getElementById('openModal');
-const closeModal = document.querySelector('.footer__popup-close-btn');
-const modalBtn = document.getElementById('closeModal');
+const subscribeModal = document.querySelector(".footer__popup");
+const subscribeBtn = document.getElementById("openModal");
+const closeModalBtn = document.querySelector(".footer__popup-close-btn");
+const modalBtn = document.getElementById("closeModal");
+const footerOverlay = document.querySelector(".footer__popup-overlay");
+const closeModal = () =>
+  subscribeModal.classList.remove("footer__popup-active");
+const openModal = () => subscribeModal.classList.add("footer__popup-active");
 
-footerModal.addEventListener('click', () => {
-  footerPopup.classList.toggle('footer__popup-active');
-})
-
-closeModal.addEventListener('click', () => {
-  footerPopup.classList.toggle('footer__popup-unactive');
-})
-
-modalBtn.addEventListener('click', () => {
-  footerPopup.classList.toggle('footer__popup-unactive');
-})
+subscribeBtn.addEventListener("click", openModal);
+closeModalBtn.addEventListener("click", closeModal);
+modalBtn.addEventListener("click", closeModal);
+footerOverlay.addEventListener("click", closeModal);
