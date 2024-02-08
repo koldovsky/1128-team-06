@@ -1,48 +1,239 @@
 .footer {
     background-color: var(--text-main-color);
     color: var(--section-color);
+    padding: 95px 24px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
 }
 
-.logo-description__img img{
+.logo-description__img img {
     width: 111px;
+    margin: auto;
 }
 
 .logo-description__text {
     font-size: 14px;
+    margin: 20px 0;
+}
+
+.footer__nav {
+    margin-top: 60px;
 }
 
 .footer__nav-link {
     color: var(--section-color);
     display: block;
+    margin: 20px 10px;
+}
+
+.footer__nav-link:hover {
+    color: var(--accent-color);
+}
+
+.footer__social-title {
+    margin: 20px 10px;
+}
+
+.footer__social {
+    margin-top: 60px;
 }
 
 .footer__social-links svg {
     fill: var(--section-color);
+    margin: 0.5em;
 }
 
-.footer__content-bottom {
-    color: var(--text-light-color);
+.footer__social-links svg:hover {
+    fill: var(--accent-color);
+
 }
 
 .newsletter-form__email {
     color: var(--section-color);
     background-color: var(--text-light-color);
     border: 0;
-    margin: 12px 0px 0px;
+    margin: 20px 0px 0px;
     padding: 20px 30px;
     border-radius: 5px;
     font-size: 12px;
+    width: 100%;
+
+}
+
+.footer__newsletter-form {
+    margin-top: 20px;
 }
 
 .footer__newsletter-form form {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .footer .button-tertiary {
+    width: 100%;
     margin: 12px 0px 0px;
     padding: 20px 30px;
     text-transform: uppercase;
     font-size: 12px;
-    height: 100%;
+
+}
+
+.footer__line {
+    height: 1px;
+    background-color: var(--text-light-color);
+    margin: 20px 0;
+}
+
+.footer__content-bottom {
+    color: var(--text-light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+
+.footer__copyright {
+    padding: 10px;
+}
+
+.footer__popup {
+    display: none;
+}
+
+.footer__popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.footer__popup-active {
+    display: block;
+}
+
+.footer__popup-unactive {
+    display: none;
+}
+
+.footer__popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--text-main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 30px;
+    width: 20vw;
+    height: 30vh;
+    z-index: 2;
+}
+
+.footer__popup-img {
+    fill: var(--accent-color);
+    width: 34px;
+    height: 34px;
+    margin: auto;
+}
+
+.footer__popup-close-btn {
+    cursor: pointer;
+    color: var(--text-light-color);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer__popup .button {
+    width: 100%;
+    background: var(--accent-color);
+    font-size: 14px;
+    color: var(--section-color);
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .footer__content-top.container {
+        max-width: 1440px;
+    }
+
+    .logo-description__img img {
+        margin: 0;
+    }
+
+    .footer__content-top {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        gap: 1em;
+        justify-content: space-between;
+
+    }
+
+    .footer__social-title {
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .footer__nav {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 20px;
+    }
+
+    .footer__nav-link {
+        margin: 0px 10px;
+    }
+
+    .logo-description__text {
+        font-size: 14px;
+        margin: 20px 0;
+        max-width: 200px;
+    }
+
+    .footer__social {
+        margin-top: 0;
+    }
+
+    .footer__newsletter-form {
+        margin-top: 0;
+    }
+
+    .footer__content-bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer__content-top.container,
+    .footer__content-bottom.container,
+    .footer__line.container {
+        min-width: 1024px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footer__content-top.container,
+    .footer__content-bottom.container,
+    .footer__line.container {
+        min-width: 1440px;
+        margin: auto;
+    }
 }

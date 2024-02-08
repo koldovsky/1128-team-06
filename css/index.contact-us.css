@@ -1,6 +1,7 @@
 .contact-us {
     background-color: var(--section-color);
     padding: 90px 0;
+    font-weight: 100;
 }
 
 .contact-us__form-container {
@@ -39,14 +40,14 @@
     padding: 0 30px;
     margin-top: 50px;
 }
-
+/*
 .contact-us__contact-info:nth-child(n) {
-    margin: 16px 0;
+    margin: 16px 0; 
 }
-
+*/
 .contact-info__title {
     font-size: 22px;
-    
+
 }
 
 .contact-info__text {
@@ -74,7 +75,7 @@
 .contact-info__map {
     display: flex;
     justify-content: center;
-    margin-top: 30px;   
+    margin-top: 30px;
 }
 
 .contact-info__map iframe {
@@ -82,4 +83,23 @@
     filter: grayscale();
 }
 
-
+@media (min-width: 768px) {
+    .contact-us__container {
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-us__contact-info{
+        margin-top: 0;
+    }
+    
+}
+@media (min-width:1024px) {
+    .contact-us__container.container{
+        min-width: 1024px;
+    }
+}
+@media (min-width:1440px) {
+    .contact-us__container.container{
+        min-width: 1440px;
+    }
+}
