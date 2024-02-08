@@ -5,6 +5,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./slick-quotes-carousel.js");
   import("./index-top-clock.js");
   import("./index-top-title.js");
-  import("./index-promotion-inverse-time.js");
   import("./footer.js");
 });

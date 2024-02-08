@@ -1,12 +1,11 @@
 .top-collection {
   background: url("../img/top-collections.background.webp");
-  height: 710.4px; /* Задаємо висоту секції для манайменшої ширини 320px (потім змінюється в media-query) */
   padding: 100px 0; /* Внутрішні відступи в секції, щоб розмістити по центру без flexbox'у*/
+  text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .top-collection {
-    height: 597.2px;
     padding: 160px 0;
   }
 }
@@ -27,7 +26,7 @@
 }
 
  /* media звпит для широких десктопних екранів */
-@media (min-width: 1024px) { 
+@media (min-width: 992px) { 
   .top-collection__title {
     line-height: 92.4px;
     font-size: 84px;
@@ -36,6 +35,6 @@
 
 .top-collection__clock {
   font-size: 2em;
-  color: blue;
-  /* margin-right: 100px; Задайте відстань від правого краю */
+  font-weight: 700;
+  margin-top: 40px;
 }
