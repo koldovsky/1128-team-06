@@ -26,7 +26,7 @@
           />
           <div class="item__minor-photo-grid">
             <img
-              src="https://e-c.storage.googleapis.com/res/5f7ad38dfe7d90db0a599470/112"
+              src="https://e-c.storage.googleapis.com/res/5f7319a4e7179bd92352ce3a/original"
               alt="Light-blue armchair"
               class="item__minor-photo"
             />
@@ -54,30 +54,44 @@
           <p class="item__price">150,00USD</p>
           <hr class="item__upper-line" />
           <div class="item__choose-item">
-              <input
-                type="number"
-                class="item__quantity"
-                name="number"
-                min="1"
-                max="30"
-              />
-            <button class="button-secondary">Add to cart</button>
+            <input
+              type="number"
+              class="item__quantity"
+              name="number"
+              min="1"
+              max="30"
+            />
+            <button class="button-secondary" id="addToCartBtn">
+              Add to cart
+            </button>
           </div>
           <div class="item__description-outer-wrapper">
-            <p class="item__description">descriotion</p>
+            <!-- <p class="item__description">descriotion</p> -->
+            <input
+              type="checkbox"
+              class="item__description-input"
+              id="description"
+              name="description"
+              unchecked
+            />
+            <label for="description" class="item__description-label">
+              Description
+            </label>
             <hr class="item__lower-line" />
-            <p class="item__description-text">
-              Simple design and vibrant turquoise color are the hallmarks of
-              this armchair. It is versatile: you can make this armchair a
-              striking accent in your interior or create an island of
-              tranquility in your office.
-            </p>
-            <br />
-            <br />
-            <div class="item__properties">
-              Dimensions and materials:
-              <p class="item__dimensions">28" x 35"</p>
-              <p class="item__materials">Faux suede, wood</p>
+            <div class="item__description-item">
+              <p class="item__description-text">
+                Simple design and vibrant turquoise color are the hallmarks of
+                this armchair. It is versatile: you can make this armchair a
+                striking accent in your interior or create an island of
+                tranquility in your office.
+              </p>
+              <br />
+              <br />
+              <div class="item__properties">
+                Dimensions and materials:
+                <p class="item__dimensions">28" x 35"</p>
+                <p class="item__materials">Faux suede, wood</p>
+              </div>
             </div>
           </div>
         </div>
@@ -85,6 +99,6 @@
     </div>
     <footer data-include="footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <script type="module" src="./js/item-page.js"></script>
+    <script type="module" src="./js/item-page2.js"></script>
   </body>
 </html>
